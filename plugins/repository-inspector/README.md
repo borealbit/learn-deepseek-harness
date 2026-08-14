@@ -8,7 +8,11 @@
 It registers one typed, read-only DeepSeek Harness Tool named
 `inspect_repository`.
 
-This is a course fixture, not a published or production-hardened package.
+This is a course release candidate, not a published or production-hardened
+package. Its manifest retains `private: true`, so npm must refuse a registry
+publication. [Module 11 — Package, Publish, and Maintain](../../course/en/11-package-publish-maintain/README.md)
+uses that deliberate blocker to distinguish a complete audit from authority to
+release.
 
 ## Capability
 
@@ -20,8 +24,9 @@ The Tool inspects one directory below a deployment-configured root and returns:
   **names**; and
 - explicit truncation, warning, read-only, and untrusted-data fields.
 
-It does not return file bodies or script command values. It does not write,
-execute commands, read environment values, or use the network.
+It does not return file bodies or script command values. It does not write or
+execute commands, it does not read environment values, and it does not use the
+network.
 
 Filenames and manifest strings are attacker-controlled data. The canonical
 result sets `untrusted: true`; the native renderer serializes the value as
@@ -73,7 +78,38 @@ pnpm test
 
 The test suite exercises the pure inspection function, traversal and symlink
 denials, acquisition bounds, cancellation, the real keyless DSH Tool Runtime,
-plugin disposal, and overlay generation.
+plugin disposal, overlay generation, and release-contract failures.
+
+## Release audit
+
+Build and inspect the prospective npm payload without writing to a registry:
+
+```sh
+pnpm release:audit
+node scripts/release-audit.mjs --draft --json
+```
+
+Draft mode exits successfully after producing a **NO-GO** report so the course
+can test the expected blocker. Strict mode is the prepublication gate and exits
+non-zero for either a blocker or unresolved external evidence:
+
+```sh
+pnpm release:verify
+```
+
+It must exit non-zero while `private: true` remains. The audit verifies package
+identity and attribution, exact compatibility pins, the `dsh.bundle` patch,
+every exported path, an allowlisted and bounded tarball inventory, permission
+and operations documentation, lifecycle scripts, and obvious secret-like or
+development-only paths. It cannot prove registry ownership, repository
+visibility, publisher authorization, clean-consumer behavior, protected
+approval, provenance, or same-artifact publication; those remain external gates
+and keep the strict decision at NO-GO.
+
+Do not weaken the strict gate merely to make it green. Remove `private: true`
+only in the reviewed version commit after every external gate in the
+[Module 11 checklist](../../course/en/11-package-publish-maintain/RELEASE-READINESS-CHECKLIST.md)
+passes.
 
 ## Temporary source overlay
 
@@ -99,17 +135,20 @@ Stop the process before rebuilding. Restart it with the same overlay to ensure
 the new built entry is loaded. Delete only the generated `module07.patch.yml`
 when the exercise is complete.
 
-## Local bundle installation
+## Install from a packed candidate
 
-The package also declares a `dsh.bundle` patch. Build first, set the allowed
-root, and install the local checkout into an isolated Web profile:
+The package declares a `dsh.bundle` patch. Pack the exact candidate, set the
+allowed root, and install the tarball into an isolated Web profile. `npm pack`
+runs `prepack`, which rebuilds `lib/`; it does not publish anything.
 
 ```sh
-pnpm build
-export MODULE07_DSH_HOME="$(mktemp -d)"
-export DSH_HOME="$MODULE07_DSH_HOME"
+export MODULE11_PACK_DIR="$(mktemp -d)"
+npm pack --pack-destination "$MODULE11_PACK_DIR"
+export MODULE11_DSH_HOME="$(mktemp -d)"
+export DSH_HOME="$MODULE11_DSH_HOME"
 export DSH_REPOSITORY_INSPECTOR_ROOT="$PWD/test/fixtures/sample-repository"
-dsh plugin --profile web add .
+dsh plugin --profile web add \
+  "$MODULE11_PACK_DIR/borealbit-dsh-repository-inspector-0.1.0.tgz"
 dsh --profile web --dump-config
 dsh --profile web
 ```
@@ -118,12 +157,37 @@ Remove the dependency and bundle layer with:
 
 ```sh
 dsh plugin --profile web remove @borealbit/dsh-repository-inspector
-unset DSH_REPOSITORY_INSPECTOR_ROOT DSH_HOME MODULE07_DSH_HOME
+unset DSH_REPOSITORY_INSPECTOR_ROOT DSH_HOME MODULE11_DSH_HOME
 ```
 
+Inspect the temporary pack directory, then remove only the directory created by
+this exercise. Never aim a recursive cleanup command at an unresolved variable.
+
 Do not install this course fixture from GitHub. It intentionally has no
-`prepare` script and does not commit build output; registry and Git packaging
-belong to Module 11.
+`prepare` script and does not commit build output. The official Harness guide
+notes that a git dependency receives source and needs a `prepare` build; pnpm
+10+ then requires the consumer to allow that install-time code explicitly. This
+candidate instead chooses prebuilt registry/tarball distribution, so a git-host
+specifier is unsupported.
+
+## Upgrade and rollback
+
+Treat the profile manifest and the packed artifact as release evidence:
+
+1. Record the installed package version and tarball digest.
+2. Install a candidate into a disposable profile first.
+3. Dump the composed config and repeat the Tool success, denial, unload, and
+   Web boot smokes.
+4. Upgrade the real profile by exact version or reviewed tarball, never by a
+   moving Git branch.
+5. If a regression appears, remove the candidate and reinstall the last known
+   good exact tarball or version.
+6. Verify the profile bundle list after either operation.
+
+A registry version is immutable; rollback means selecting a new or previous
+version, not replacing the bytes under an existing name/version. If a release
+creates a security or compatibility problem, deprecate the affected version,
+publish a new fixed version, and retain an incident and migration record.
 
 ## Configuration
 
@@ -151,7 +215,8 @@ temporarily unavailable mount becomes a structured call error.
 
 ## Known limitations
 
-- The package is private and intentionally unpublished.
+- The package is private and intentionally unpublished; the repository is also
+  private at the Module 11 reference date.
 - The source overlay requires a prior build and a process restart after rebuild.
 - Exact rc.6 CLI/profile and Web HTTP boot smokes pass on the reference Linux
   runner; browser schema inspection and an authenticated model call are not yet
@@ -160,7 +225,12 @@ temporarily unavailable mount becomes a structured call error.
 - The Tool reports a bounded sample, not a complete recursive repository tree.
 - It does not parse workspaces, lockfiles, source code, Git state, or dependency
   health.
+- The release audit is offline. It does not reserve the npm name, authenticate a
+  publisher, prove repository/topic visibility, scan the full dependency graph,
+  produce provenance, or write to a registry.
 
 See the module's
 [build record](../../course/en/07-build-first-dsh-plugin/PLUGIN-BUILD-RECORD.md)
-for dated evidence and remaining verification work.
+for implementation evidence, the [Module 11 release audit record](../../course/en/11-package-publish-maintain/RELEASE-AUDIT-RECORD.md)
+for package evidence, and [SECURITY.md](SECURITY.md) for vulnerability-reporting
+rules.

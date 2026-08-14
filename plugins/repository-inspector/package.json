@@ -4,6 +4,13 @@
   "description": "Bounded read-only repository inspection Tool for DeepSeek Harness",
   "private": true,
   "author": "Dom Liu",
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "cordis",
+    "agent-tool",
+    "repository-inspection"
+  ],
   "type": "module",
   "packageManager": "pnpm@11.19.0",
   "repository": {
@@ -12,6 +19,9 @@
     "directory": "plugins/repository-inspector"
   },
   "homepage": "https://github.com/borealbit/learn-deepseek-harness/tree/main/plugins/repository-inspector",
+  "bugs": {
+    "url": "https://github.com/borealbit/learn-deepseek-harness/issues"
+  },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "exports": {
@@ -30,8 +40,10 @@
     "scripts/create-overlay.mjs",
     "cordis.patch.yml",
     "README.md",
+    "CHANGELOG.md",
     "LICENSE",
-    "NOTICE"
+    "NOTICE",
+    "SECURITY.md"
   ],
   "dsh": {
     "bundle": {
@@ -39,6 +51,9 @@
     }
   },
   "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": "^22.19.0 || >=24.0.0"
   },
@@ -46,8 +61,12 @@
     "build": "node scripts/clean.mjs && tsc -p tsconfig.json",
     "clean": "node scripts/clean.mjs",
     "overlay": "node scripts/create-overlay.mjs",
-    "test": "pnpm run build && node --test test/repository-inspector.test.js",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "test": "pnpm run build && node --test test/*.test.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "release:audit": "pnpm run build && node scripts/release-audit.mjs --draft",
+    "release:verify": "pnpm run build && node scripts/release-audit.mjs",
+    "prepack": "pnpm run build",
+    "prepublishOnly": "pnpm run release:verify"
   },
   "dependencies": {
     "@deepseek-ai/schemastery": "3.18.1"

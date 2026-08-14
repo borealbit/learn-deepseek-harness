@@ -893,5 +893,5 @@ output, or unsanitized telemetry.
 
 ## Next
 
-Continue with **Module 11 — Package, Publish, and Maintain** when its draft is
-published.
+Continue with
+[Module 11 — Package, Publish, and Maintain](../11-package-publish-maintain/README.md).

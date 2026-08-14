@@ -29,7 +29,7 @@ This is the canonical and currently active edition of Learn DeepSeek Harness.
 |---:|---|---|
 | 09 | [Subagents, Workflows, and Automation](09-subagents-workflows-automation/README.md) | Draft |
 | 10 | [Tracing, Evaluation, and Failure Recovery](10-tracing-evaluation-failure-recovery/README.md) | Draft |
-| 11 | Package, Publish, and Maintain | Planned |
+| 11 | [Package, Publish, and Maintain](11-package-publish-maintain/README.md) | Draft |
 
 ### Capstone
 

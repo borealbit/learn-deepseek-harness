@@ -93,10 +93,19 @@ This roadmap is milestone-based. DeepSeek Harness is a fast-moving developer pre
 - [x] Add seven keyless input, handoff, lifecycle, failure, cap, cancellation, and disposal tests plus a dated workflow run record
 - [ ] Run Module 09 with authenticated spawn/fork and one remote provider in isolated read-only environments
 - [ ] Verify continuable-child and persisted-schedule behavior and complete cross-platform and independent learner passes for Module 09
-- [ ] Publish and verify Modules 09–11
+- [x] Research official Session tracing, retry, timeout, cancellation, persistence, telemetry, and replay contracts
+- [x] Draft Module 10 in English
+- [x] Add the paired five-task Mode Comparison Lab, ten keyless tests, real rc.6 Session validation, and evaluation report
+- [ ] Run Module 10 with authenticated providers and live retry/timeout/cancellation plus persistence, telemetry, browser, cross-platform, and learner checks
+- [x] Research official bundle packaging, plugin CLI, artifact-first release, npm payload, SemVer, and discovery contracts
+- [x] Draft Module 11 in English
+- [x] Add the Repository Inspector release contract, checklist, draft notes, security/change documents, and dated audit record
+- [x] Run strict type, thirteen tests, prospective/repeated actual pack, exact rc.6 tarball/profile/config, Loader/Web HTTP boot, shutdown, and removal checks
+- [ ] Resolve Module 11's public repository/security, npm identity, protected same-artifact publication, provenance, registry, authenticated/browser, cross-platform, upgrade, and learner gates
+- [ ] Complete outstanding verification for Modules 09–11
 - [ ] Build the Release Readiness Agent
-- [ ] Add golden tasks and regression reporting
-- [ ] Document failure recovery and upgrade workflows
+- [x] Add initial golden tasks and regression reporting in Module 10
+- [x] Document initial failure recovery and upgrade workflows in Modules 10–11
 - [ ] Publish English v1
 
 ## Milestone 5 — Localization and community
