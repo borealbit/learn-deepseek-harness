@@ -2,16 +2,16 @@
 
 ## Purpose
 
-This repository is a versioned, multilingual, project-based course about DeepSeek Harness. Accuracy, reproducibility, safety, and translation parity are more important than volume.
+This repository is a versioned, English-first, project-based course about DeepSeek Harness. Accuracy, reproducibility, safety, and evidence are more important than volume. Localization is paused until English v1 is complete.
 
 ## Source of truth
 
 - `README.md` is the canonical project overview.
 - `SYLLABUS.md` is the canonical curriculum map.
-- `course/en/` is the canonical lesson content.
-- `course/zh-CN/` and `course/ja/` are translations, not independent curricula.
+- `course/en/` is the only active lesson edition.
+- `course/zh-CN/` and `course/ja/` are frozen placeholders during the English-first phase.
 - `docs/VERSIONING.md` defines verification requirements.
-- Official upstream code and documentation outrank community summaries.
+- Official upstream code, documentation, and registry metadata outrank community summaries.
 
 ## Required workflow
 
@@ -19,12 +19,12 @@ Before editing technical content:
 
 1. Identify the exact course module and intended learning outcome.
 2. Inspect the current upstream DeepSeek Harness documentation or source.
-3. Record the upstream commit, tag, or package version used for verification.
-4. Keep the proposed change bounded.
-5. Run the documented commands or clearly mark the content as unverified.
-6. Update English first.
-7. Update translation status; do not silently claim parity.
-8. Check links, terminology, safety notes, and expected results.
+3. Identify the exact installable package version.
+4. Record both the package version and an immutable upstream source commit.
+5. Keep the proposed change bounded.
+6. Run the documented commands or clearly mark the content as unverified.
+7. Update English only during the current phase.
+8. Check links, terminology, safety notes, expected results, and verification metadata.
 
 ## File conventions
 
@@ -40,7 +40,7 @@ Before editing technical content:
 - Lead with what the learner will be able to do.
 - Define terms before using abbreviations.
 - Prefer short, testable steps.
-- Separate observed behavior from inference.
+- Separate observed behavior, source review, and inference.
 - State risks at the step where they occur.
 - Do not market experimental behavior as production-ready.
 - Never imply that this project is official or endorsed by DeepSeek.
@@ -49,24 +49,28 @@ Before editing technical content:
 
 - Prefer least privilege and disposable practice workspaces.
 - Treat third-party plugins as executable code requiring review.
-- Use exact commands only after verifying them against the pinned upstream reference.
+- Use exact commands only after checking them against both the published package and pinned source.
 - Include success criteria and failure recovery.
 - Preserve traceability: inputs, tool calls, outputs, and configuration should be reproducible.
-- Do not recommend `danger-full-access` as a default.
-- Never place secrets in screenshots, fixtures, command history, or sample configuration.
+- Do not recommend `danger-full-access` as a default or as a troubleshooting shortcut.
+- Never place secrets in screenshots, fixtures, command history, sample configuration, or completed checklists.
 
-## Translation standard
+## Verification language
 
-- Preserve module numbers, code, identifiers, links, and expected outcomes.
-- Use English technical identifiers where translation would make code harder to follow.
-- Maintain a short glossary for terms whose translations vary.
-- Japanese content requires natural-language review before being marked complete.
-- When English changes, mark affected translations as `needs-review` until reconciled.
+- `source-reviewed` means official source and documentation were inspected.
+- `install-tested` means the package installed in a documented environment.
+- `verified` requires the complete lesson flow, expected results, safety checks, and platform record.
+- Never collapse those stages into one claim.
+- If the npm package and latest source commit differ, record both and keep the module in draft until the gap is understood.
+
+## Future translation standard
+
+Do not edit translations unless the repository owner has reopened localization. When that phase begins, preserve module numbers, code, identifiers, links, expected outcomes, and status accuracy. Japanese content requires natural-language review before being marked complete.
 
 ## Validation before handoff
 
 - Confirm the repository structure still matches `docs/STRUCTURE.md`.
 - Confirm internal Markdown links resolve.
-- Confirm every changed technical lesson has verification metadata.
+- Confirm every changed technical lesson has package, source, and verification metadata.
 - Confirm no credential-like values were introduced.
-- Summarize changed files, checks performed, and any unverified assumptions.
+- Summarize changed files, checks performed, and unverified assumptions.

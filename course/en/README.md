@@ -1,6 +1,6 @@
 # English Course
 
-This is the canonical edition of Learn DeepSeek Harness.
+This is the canonical and currently active edition of Learn DeepSeek Harness.
 
 ## Progression
 
@@ -8,7 +8,7 @@ This is the canonical edition of Learn DeepSeek Harness.
 
 | # | Module | Status |
 |---:|---|---|
-| 00 | Quick Start: From Zero to First Safe Task | Planned |
+| 00 | [Quick Start: From Zero to First Safe Task](00-quick-start/README.md) | Draft |
 | 01 | Agent = Model + Harness | Planned |
 | 02 | Understanding the Plugin Architecture | Planned |
 | 03 | Mastering the Four Runtime Modes | Planned |
@@ -41,4 +41,4 @@ Read [SYLLABUS.md](../../SYLLABUS.md) for learning objectives, lesson plans, and
 
 ## Content rule
 
-A module directory will be created when real drafting begins. Empty modules are not generated in advance. Each technical lesson must use [the module template](../../templates/module-template.md) and follow [the verification policy](../../docs/VERSIONING.md).
+A module directory is created when real drafting begins. Empty modules are not generated in advance. Each technical lesson must use [the module template](../../templates/module-template.md) and follow [the verification policy](../../docs/VERSIONING.md).

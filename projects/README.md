@@ -2,11 +2,11 @@
 
 Runnable artifacts live here. They turn course concepts into evidence that learners can inspect, test, and modify.
 
-## Planned projects
+## Projects
 
 | Project | Related modules | Purpose | Status |
 |---|---|---|---|
-| Disposable Practice Repository | 00, 05 | Safe first-run and change-review exercises | Planned |
+| [Quick Start Workspace](quick-start-workspace/) | 00, 05 | Safe first-run and change-review exercises | Draft |
 | Mode Comparison Lab | 03, 10 | Compare behavior under controlled inputs | Planned |
 | Provider Configuration Lab | 04 | Practice sanitized provider setup | Planned |
 | Release Readiness Agent | 05–12 | Integrate safety, tools, workflows, and evaluation | Planned |

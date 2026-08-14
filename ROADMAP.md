@@ -1,12 +1,12 @@
 # Roadmap
 
-This roadmap is milestone-based. DeepSeek Harness is a fast-moving developer preview, so lesson dates are less meaningful than verified deliverables.
+This roadmap is milestone-based. DeepSeek Harness is a fast-moving developer preview, so verified deliverables matter more than calendar promises.
 
 ## Principles
 
 - Publish small, testable lessons instead of one large static course.
-- Pin every technical lesson to an upstream revision.
-- Complete and verify English before translating the same module.
+- Pin every technical lesson to both an installable package and an immutable upstream source revision when they differ.
+- Complete and verify the English v1 course before localization begins.
 - Keep free onboarding useful; reserve deeper value for complete projects and maintained assets.
 - Prefer official sources and reproducible experiments over summaries.
 
@@ -14,47 +14,50 @@ This roadmap is milestone-based. DeepSeek Harness is a fast-moving developer pre
 
 - [x] Establish the course positioning and independence notice
 - [x] Define the complete syllabus
-- [x] Create English, Simplified Chinese, and Japanese entry points
-- [x] Define repository and localization structure
+- [x] Define repository and future localization structure
 - [x] Define version and verification policy
 - [x] Add contribution and agent-authoring guidance
 
-## Milestone 1 — Free quick start
+## Milestone 1 — English quick start
 
-- [ ] Verify the current installation flow on macOS and Linux
-- [ ] Document prerequisites and common failure modes
-- [ ] Publish Module 00 in English
-- [ ] Add a disposable practice repository
-- [ ] Produce the first-run safety checklist
-- [ ] Translate the verified lesson into Simplified Chinese
-- [ ] Translate the verified lesson into Japanese after native-language review
+- [x] Research the current official Web UI, model, workspace, permission, and trajectory flows
+- [x] Pin the current source review and installable npm package separately
+- [x] Draft Module 00 in English
+- [x] Add a disposable practice workspace
+- [x] Add the first-run safety checklist
+- [ ] Verify installation and launch on a clean macOS environment
+- [ ] Verify installation and launch on a clean Linux environment
+- [ ] Complete one authenticated model run and inspect its trajectory
+- [ ] Mark Module 00 verified
 
-## Milestone 2 — Operator foundations
+## Milestone 2 — English operator foundations
 
-- [ ] Publish Modules 01–04
+- [ ] Publish and verify Modules 01–04
 - [ ] Add runtime and provider decision guides
 - [ ] Create mode-comparison exercises
 - [ ] Add session and workspace troubleshooting
 - [ ] Establish automated link and Markdown checks
 
-## Milestone 3 — Plugin builder track
+## Milestone 3 — English plugin builder track
 
-- [ ] Publish Modules 05–08
+- [ ] Publish and verify Modules 05–08
 - [ ] Create the first native DSH tool plugin
 - [ ] Add permission-gate and context-injection examples
 - [ ] Publish the Plugin / Tool / Skill / MCP decision matrix
 - [ ] Add plugin unit and smoke-test scaffolding
 
-## Milestone 4 — Production practice and capstone
+## Milestone 4 — English production practice and capstone
 
-- [ ] Publish Modules 09–11
+- [ ] Publish and verify Modules 09–11
 - [ ] Build the Release Readiness Agent
 - [ ] Add golden tasks and regression reporting
 - [ ] Document failure recovery and upgrade workflows
-- [ ] Publish a complete versioned course release
+- [ ] Publish English v1
 
 ## Milestone 5 — Localization and community
 
+- [ ] Reopen Simplified Chinese localization after English v1
+- [ ] Reopen Japanese localization with native-language review
 - [ ] Reach full Simplified Chinese parity
 - [ ] Reach native-reviewed Japanese parity
 - [ ] Add contribution issue templates
@@ -67,4 +70,4 @@ This roadmap is milestone-based. DeepSeek Harness is a fast-moving developer pre
 - Paid certification
 - Enterprise deployment guarantees
 - Unsupported claims of feature parity with other agent products
-- Translations generated without technical and language review
+- Translations generated before the English source is verified

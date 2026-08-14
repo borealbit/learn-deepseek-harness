@@ -1,8 +1,10 @@
 ---
 course_version: 0.1.0
 upstream_repository: https://github.com/deepseek-ai/deepseek-harness
-upstream_ref: "<tag, package version, or full commit SHA>"
-verified_on: YYYY-MM-DD
+upstream_ref: "<full commit SHA>"
+install_package: "@deepseek-ai/dsh@<exact version>"
+source_reviewed_on: YYYY-MM-DD
+verified_on:
 status: draft
 platforms: []
 ---
@@ -16,6 +18,10 @@ After this module, the learner can:
 - state one observable capability
 - complete one bounded task
 - verify the result independently
+
+## Verification status
+
+State what was source-reviewed, installed, and executed. Do not call a module verified until the complete flow passes on every listed platform.
 
 ## Why this matters
 
@@ -74,9 +80,9 @@ Provide a command, test, log location, or UI view that proves completion.
 
 Describe the file, report, plugin, or trace the learner should retain.
 
-## Further reading
+## Official sources
 
-Use official links first and label community sources.
+Use official, immutable links first. Label community sources and do not use them as the sole authority for security-sensitive behavior.
 
 ## Next module
 

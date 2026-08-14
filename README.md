@@ -1,24 +1,33 @@
 # Learn DeepSeek Harness
 
-[English](README.md) · [简体中文](README.zh-CN.md) · [日本語](README.ja.md)
-
 > An independent, project-based learning resource by [Borealbit](https://github.com/borealbit). This project is not affiliated with, endorsed by, or maintained by DeepSeek.
 
 Learn how to use and extend [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)—from the first safe run to production-minded plugins, workflows, and agent systems.
 
 ## Project status
 
-**Foundation / curriculum design**
+**English-first development · Module 00 in draft**
 
-DeepSeek Harness is currently a developer preview and may introduce compatibility-breaking changes. This repository therefore treats the course as a versioned, continuously verified learning project rather than a static recording.
+The English course is the only active edition until English v1 is complete. Existing Simplified Chinese and Japanese placeholders are frozen; localization will resume after the English lessons and labs have been verified.
+
+DeepSeek Harness is a developer preview and may introduce compatibility-breaking changes. This repository therefore treats the course as a versioned, continuously verified learning project rather than a static recording.
+
+## Start here
+
+1. Open [Module 00 — Quick Start](course/en/00-quick-start/README.md).
+2. Use the included [practice workspace](projects/quick-start-workspace/).
+3. Record the result in the [first-run checklist](course/en/00-quick-start/CHECKLIST.md).
+4. Continue through the [course syllabus](SYLLABUS.md).
+
+Module 00 is currently **source-reviewed but not yet end-to-end verified**. Its install package is `@deepseek-ai/dsh@0.1.0-rc.6`; the source review is pinned to upstream commit [`47f943859bef60e4160492346772ded9b24f765a`](https://github.com/deepseek-ai/deepseek-harness/commit/47f943859bef60e4160492346772ded9b24f765a). See the lesson's verification note before running it.
 
 ## What makes this course different
 
 - **Project-based:** every track produces a working artifact.
 - **Source-linked:** technical claims point back to official code or documentation.
-- **Version-aware:** lessons record the upstream revision on which they were tested.
+- **Version-aware:** lessons record both the installable package and the upstream source revision used for review.
 - **Safety-first:** approvals, sandboxes, secrets, and third-party plugin review are part of the core curriculum.
-- **Multilingual:** English is the canonical source; Chinese and Japanese editions follow the same module map.
+- **English-first:** one canonical edition is completed and verified before localization begins.
 
 ## Who this is for
 
@@ -46,7 +55,7 @@ By the end of the course, you should be able to:
 
 | # | Module | Track | Status |
 |---:|---|---|---|
-| 00 | Quick Start: From Zero to First Safe Task | Operator | Planned |
+| 00 | [Quick Start: From Zero to First Safe Task](course/en/00-quick-start/README.md) | Operator | Draft |
 | 01 | Agent = Model + Harness | Operator | Planned |
 | 02 | Understanding the Plugin Architecture | Operator | Planned |
 | 03 | Mastering the Four Runtime Modes | Operator | Planned |
@@ -67,8 +76,6 @@ Read the complete learning objectives, lesson breakdown, and deliverables in [SY
 | Path | Purpose |
 |---|---|
 | `course/en/` | Canonical English course content |
-| `course/zh-CN/` | Simplified Chinese translation |
-| `course/ja/` | Japanese translation |
 | `projects/` | Runnable labs and the capstone project |
 | `plugins/` | Course-built DSH plugins |
 | `resources/` | Curated official references and decision guides |
@@ -77,18 +84,11 @@ Read the complete learning objectives, lesson breakdown, and deliverables in [SY
 
 See [docs/STRUCTURE.md](docs/STRUCTURE.md) for the full information architecture.
 
-## Start here
-
-1. Read the [course syllabus](SYLLABUS.md).
-2. Review the [version and verification policy](docs/VERSIONING.md).
-3. Choose a language edition under [course/](course/).
-4. Follow the project [roadmap](ROADMAP.md).
-5. Read [CONTRIBUTING.md](CONTRIBUTING.md) before proposing content or translations.
-
 ## Upstream references
 
 - [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)
-- [Official Harness introduction](https://deepseek.com/harness/en/)
+- [Official Web UI guide](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/user/guide/index.md)
+- [Official model configuration guide](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/user/guide/providers.md)
 - [DeepSeek Harness architecture](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/architecture.md)
 - [Extension cookbook](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/cookbook/extension-cookbook.md)
 - [Cordis](https://github.com/cordiverse/cordis)

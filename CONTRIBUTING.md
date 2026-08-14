@@ -2,14 +2,18 @@
 
 Thank you for helping make Learn DeepSeek Harness accurate, practical, and safe.
 
+## Current scope: English first
+
+English under `course/en/` is the only active edition until English v1 is complete. Simplified Chinese and Japanese localization is intentionally paused. Please do not open translation-only pull requests during this phase; corrections and new technical content must land in English first.
+
 ## Good contributions
 
 - Corrections backed by official source links or reproducible evidence
 - Small runnable labs
 - Plugin tests and compatibility fixes
 - Clear troubleshooting notes
-- Simplified Chinese and Japanese translation improvements
 - Accessibility, structure, and navigation improvements
+- Clean-platform verification reports for draft lessons
 
 ## Before starting
 
@@ -17,21 +21,7 @@ Thank you for helping make Learn DeepSeek Harness accurate, practical, and safe.
 2. Check the roadmap and existing work.
 3. Keep one pull request focused on one module or concern.
 4. For substantial new content, describe the proposed outcome and evidence before drafting a long lesson.
-
-## Canonical language and translations
-
-English under `course/en/` is the canonical content.
-
-Translation workflow:
-
-1. Verify the English lesson.
-2. Copy the module structure without changing its number or learning outcome.
-3. Preserve code, identifiers, file paths, API names, and upstream references.
-4. Translate meaning rather than sentence order.
-5. Mark untranslated or uncertain material explicitly.
-6. Require a technical review and a language review before declaring parity.
-
-Do not modify the Chinese or Japanese edition to introduce technical content that is absent from the English source. Propose the improvement to the English source first, then translate it.
+5. Do not change a module to `verified` without all required evidence.
 
 ## Lesson requirements
 
@@ -39,10 +29,11 @@ Every technical lesson must include:
 
 - learning objective
 - prerequisites
-- exact upstream repository reference
-- verification date and status
-- bounded steps
-- expected result
+- exact installable package version
+- immutable upstream source reference
+- source-review and verification dates
+- accurate status and tested platforms
+- bounded steps and expected results
 - safety or permission notes
 - troubleshooting section
 - completion check
@@ -56,9 +47,10 @@ Prefer, in order:
 
 1. Official DeepSeek Harness source code
 2. Official DeepSeek Harness documentation
-3. Official Cordis source and documentation
-4. Reproducible experiments stored in this repository
-5. Clearly labeled community references
+3. Official package-registry metadata
+4. Official Cordis source and documentation
+5. Reproducible experiments stored in this repository
+6. Clearly labeled community references
 
 Do not present search snippets, social posts, or unverified third-party tutorials as authoritative technical behavior.
 
@@ -75,12 +67,15 @@ Do not present search snippets, social posts, or unverified third-party tutorial
 
 - [ ] The change has one clear purpose.
 - [ ] Relative links resolve.
-- [ ] Commands and examples were run in a clean environment.
-- [ ] The verified upstream reference is recorded.
+- [ ] Commands and examples were run in a clean environment, or the draft clearly says what remains unverified.
+- [ ] The exact install package and upstream source reference are recorded.
 - [ ] Security and permission implications are explained.
-- [ ] English canonical content was updated first.
-- [ ] Translation status is accurate.
+- [ ] Only canonical English content was developed during the English-first phase.
 - [ ] No official affiliation is implied.
+
+## Future localization
+
+After English v1, localization will preserve module numbers, code, identifiers, paths, API names, upstream references, and expected outcomes. Japanese content will require natural-language review before parity is claimed. The repository owner will explicitly reopen localization work at that milestone.
 
 ## Community conduct
 

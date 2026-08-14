@@ -1,0 +1,7 @@
+{
+  "name": "dsh-quick-start-workspace",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Synthetic read-only fixture for Learn DeepSeek Harness Module 00"
+}
