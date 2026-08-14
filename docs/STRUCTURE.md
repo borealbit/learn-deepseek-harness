@@ -38,9 +38,12 @@ The structure separates canonical English course content, runnable artifacts, li
 │   │   ├── 04-models-providers-workspaces-sessions/
 │   │   │   ├── README.md
 │   │   │   └── CONFIG-AND-SESSION-STRATEGY.md
-│   │   └── 05-safe-agentic-coding-workflows/
+│   │   ├── 05-safe-agentic-coding-workflows/
+│   │   │   ├── README.md
+│   │   │   └── SAFE-CHANGE-CHECKLIST.md
+│   │   └── 06-plugins-tools-skills-mcp/
 │   │       ├── README.md
-│   │       └── SAFE-CHANGE-CHECKLIST.md
+│   │       └── EXTENSION-DECISION-MATRIX.md
 │   ├── zh-CN/
 │   │   └── README.md
 │   └── ja/
@@ -57,15 +60,23 @@ The structure separates canonical English course content, runnable artifacts, li
 │   │   │   └── project-goals.md
 │   │   └── src/
 │   │       └── greeting.js
-│   └── safe-change-workspace/
-│       ├── AGENTS.md
-│       ├── CHANGE-REQUEST.md
+│   ├── safe-change-workspace/
+│   │   ├── AGENTS.md
+│   │   ├── CHANGE-REQUEST.md
+│   │   ├── README.md
+│   │   ├── package.json
+│   │   ├── src/
+│   │   │   └── slugify.js
+│   │   └── test/
+│   │       └── slugify.test.js
+│   └── extension-selection-lab/
 │       ├── README.md
+│       ├── SCENARIOS.md
 │       ├── package.json
 │       ├── src/
-│       │   └── slugify.js
+│       │   └── validate-matrix.js
 │       └── test/
-│           └── slugify.test.js
+│           └── validate-matrix.test.js
 ├── plugins/
 │   └── README.md
 ├── resources/

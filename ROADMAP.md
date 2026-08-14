@@ -63,10 +63,15 @@ This roadmap is milestone-based. DeepSeek Harness is a fast-moving developer pre
 - [x] Add the reusable safe-change checklist
 - [ ] Run Module 05's plan, permission, mutation, audit, and recovery lab on clean macOS and Linux environments
 - [ ] Complete an independent learner pass and mark Module 05 verified
-- [ ] Publish and verify Modules 06–08
+- [x] Research official Tool, Skill, MCP bridge, Cordis lifecycle, packaging, and inventory contracts
+- [x] Draft Module 06 in English
+- [x] Publish the Plugin / Tool / Skill / MCP decision matrix
+- [x] Add the dependency-free Extension Selection Lab and matrix validator
+- [ ] Run Module 06's decision lab on clean macOS and Linux environments
+- [ ] Complete an independent learner pass and mark Module 06 verified
+- [ ] Publish and verify Modules 07–08
 - [ ] Create the first native DSH tool plugin
 - [ ] Add permission-gate and context-injection examples
-- [ ] Publish the Plugin / Tool / Skill / MCP decision matrix
 - [ ] Add plugin unit and smoke-test scaffolding
 
 ## Milestone 4 — English production practice and capstone

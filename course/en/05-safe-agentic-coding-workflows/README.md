@@ -452,4 +452,4 @@ One completed, sanitized [safe-change checklist](SAFE-CHANGE-CHECKLIST.md) conta
 
 ## Next module
 
-[Module 06 — Plugins vs Tools vs Skills vs MCP](../../../SYLLABUS.md#module-06--plugins-vs-tools-vs-skills-vs-mcp) is planned. Until it is published, use the syllabus as the learning map.
+Continue to [Module 06 — Plugins vs Tools vs Skills vs MCP](../06-plugins-tools-skills-mcp/README.md) to choose the correct extension stack before building one.
