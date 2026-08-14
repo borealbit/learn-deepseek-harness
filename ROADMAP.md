@@ -69,10 +69,16 @@ This roadmap is milestone-based. DeepSeek Harness is a fast-moving developer pre
 - [x] Add the dependency-free Extension Selection Lab and matrix validator
 - [ ] Run Module 06's decision lab on clean macOS and Linux environments
 - [ ] Complete an independent learner pass and mark Module 06 verified
-- [ ] Publish and verify Modules 07–08
-- [ ] Create the first native DSH tool plugin
+- [x] Research official plugin entry, typed Tool, configuration, packaging, profile, lifecycle, and testing contracts
+- [x] Draft Module 07 in English
+- [x] Create the first bounded native DSH Tool plugin
+- [x] Add plugin unit, negative-boundary, lifecycle, and real Tool Runtime smoke-test scaffolding
+- [x] Add a dated plugin build record and pack-dry-run inventory
+- [x] Run the exact rc.6 CLI bundle/profile, config-dump, Loader/Web HTTP boot, shutdown, and removal smoke in disposable Linux paths
+- [ ] Run Module 07's browser, authenticated model, and reload lab on clean macOS and Linux environments
+- [ ] Review Windows symbolic-link behavior and complete an independent learner pass for Module 07
+- [ ] Publish and verify Module 08
 - [ ] Add permission-gate and context-injection examples
-- [ ] Add plugin unit and smoke-test scaffolding
 
 ## Milestone 4 — English production practice and capstone
 

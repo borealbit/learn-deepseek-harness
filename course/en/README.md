@@ -20,7 +20,7 @@ This is the canonical and currently active edition of Learn DeepSeek Harness.
 |---:|---|---|
 | 05 | [Safe Agentic Coding Workflows](05-safe-agentic-coding-workflows/README.md) | Draft |
 | 06 | [Plugins vs Tools vs Skills vs MCP](06-plugins-tools-skills-mcp/README.md) | Draft |
-| 07 | Build Your First DSH Plugin | Planned |
+| 07 | [Build Your First DSH Plugin](07-build-first-dsh-plugin/README.md) | Draft |
 | 08 | Hooks, Context, and Session Engineering | Planned |
 
 ### Track C — Production Practice

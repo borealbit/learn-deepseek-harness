@@ -1,0 +1,7 @@
+- insert:
+    - id: borealbit-repository-inspector
+      name: '@borealbit/dsh-repository-inspector'
+      config:
+        allowedRoot: !!js process.env.DSH_REPOSITORY_INSPECTOR_ROOT
+        maxEntries: 40
+        maxManifestBytes: 32768

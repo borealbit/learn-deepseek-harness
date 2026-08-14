@@ -41,9 +41,12 @@ The structure separates canonical English course content, runnable artifacts, li
 │   │   ├── 05-safe-agentic-coding-workflows/
 │   │   │   ├── README.md
 │   │   │   └── SAFE-CHANGE-CHECKLIST.md
-│   │   └── 06-plugins-tools-skills-mcp/
+│   │   ├── 06-plugins-tools-skills-mcp/
+│   │   │   ├── README.md
+│   │   │   └── EXTENSION-DECISION-MATRIX.md
+│   │   └── 07-build-first-dsh-plugin/
 │   │       ├── README.md
-│   │       └── EXTENSION-DECISION-MATRIX.md
+│   │       └── PLUGIN-BUILD-RECORD.md
 │   ├── zh-CN/
 │   │   └── README.md
 │   └── ja/
@@ -78,7 +81,24 @@ The structure separates canonical English course content, runnable artifacts, li
 │       └── test/
 │           └── validate-matrix.test.js
 ├── plugins/
-│   └── README.md
+│   ├── README.md
+│   └── repository-inspector/
+│       ├── README.md
+│       ├── LICENSE
+│       ├── NOTICE
+│       ├── package.json
+│       ├── pnpm-lock.yaml
+│       ├── tsconfig.json
+│       ├── cordis.patch.yml
+│       ├── scripts/
+│       │   ├── clean.mjs
+│       │   └── create-overlay.mjs
+│       ├── src/
+│       │   ├── index.ts
+│       │   └── inspect-repository.ts
+│       └── test/
+│           ├── repository-inspector.test.js
+│           └── fixtures/
 ├── resources/
 │   └── README.md
 └── templates/
@@ -135,6 +155,29 @@ projects/project-name/
 ```
 
 Every runnable project should document setup, permissions, expected output, tests, cleanup, and the exact DeepSeek Harness package and source revision used.
+
+## Plugin artifact shape
+
+```text
+plugins/plugin-name/
+├── README.md
+├── LICENSE
+├── NOTICE
+├── package.json
+├── pnpm-lock.yaml
+├── tsconfig.json
+├── cordis.patch.yml
+├── scripts/
+├── src/
+└── test/
+```
+
+Every course plugin should document its model-callable surface, deployment
+configuration, dependency and lifecycle contract, permission and data-flow
+boundary, acquisition and output limits, tests, loading/removal steps, known
+limitations, and exact package/source compatibility evidence. Generated build
+output, dependency directories, tarballs, credentials, and private overlays do
+not belong in Git.
 
 ## Future translation parity
 

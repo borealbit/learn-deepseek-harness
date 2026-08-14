@@ -1,0 +1,67 @@
+{
+  "name": "@borealbit/dsh-repository-inspector",
+  "version": "0.1.0",
+  "description": "Bounded read-only repository inspection Tool for DeepSeek Harness",
+  "private": true,
+  "author": "Dom Liu",
+  "type": "module",
+  "packageManager": "pnpm@11.19.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borealbit/learn-deepseek-harness.git",
+    "directory": "plugins/repository-inspector"
+  },
+  "homepage": "https://github.com/borealbit/learn-deepseek-harness/tree/main/plugins/repository-inspector",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./inspect": {
+      "types": "./lib/inspect-repository.d.ts",
+      "default": "./lib/inspect-repository.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "scripts/create-overlay.mjs",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "scripts": {
+    "build": "node scripts/clean.mjs && tsc -p tsconfig.json",
+    "clean": "node scripts/clean.mjs",
+    "overlay": "node scripts/create-overlay.mjs",
+    "test": "pnpm run build && node --test test/repository-inspector.test.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "3.18.1"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "4.0.1",
+    "@deepseek-ai/dsh-tools": "0.1.0-rc.6"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "4.0.1",
+    "@deepseek-ai/dsh-llm": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-system-prompt": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-tools": "0.1.0-rc.6",
+    "@types/node": "24.10.1",
+    "typescript": "6.0.3"
+  }
+}

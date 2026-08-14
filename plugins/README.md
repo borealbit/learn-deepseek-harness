@@ -1,12 +1,12 @@
 # Course Plugins
 
-This directory will contain plugins authored and maintained as part of the course.
+This directory contains plugins authored and maintained as part of the course.
 
-## Planned examples
+## Course examples
 
 | Plugin | Course role | Status |
 |---|---|---|
-| Repository Inspector Tool | First typed tool plugin | Planned |
+| [Repository Inspector Tool](repository-inspector/) | First typed, bounded Tool plugin | Draft — local tests pass; complete product verification pending |
 | Permission Gate | Hook and fail-closed policy example | Planned |
 | Release Report Renderer | Structured result and presentation example | Planned |
 | Evaluation Recorder | Trace and metrics example | Planned |

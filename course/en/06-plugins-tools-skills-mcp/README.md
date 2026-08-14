@@ -388,4 +388,4 @@ One completed, sanitized [extension decision matrix](EXTENSION-DECISION-MATRIX.m
 
 ## Next module
 
-[Module 07 — Build Your First DSH Plugin](../../../SYLLABUS.md#module-07--build-your-first-dsh-plugin) will turn the native side of this decision into a tested plugin.
+[Module 07 — Build Your First DSH Plugin](../07-build-first-dsh-plugin/README.md) turns the native side of this decision into a tested plugin.
