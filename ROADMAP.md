@@ -32,7 +32,11 @@ This roadmap is milestone-based. DeepSeek Harness is a fast-moving developer pre
 
 ## Milestone 2 — English operator foundations
 
-- [ ] Publish and verify Modules 01–04
+- [x] Research the official model, agent, harness, application, loop, context, tool, state, and policy boundaries
+- [x] Draft Module 01 in English
+- [x] Add the one-page architecture-map exercise
+- [ ] Complete an independent learner pass and mark Module 01 verified
+- [ ] Publish and verify Modules 02–04
 - [ ] Add runtime and provider decision guides
 - [ ] Create mode-comparison exercises
 - [ ] Add session and workspace troubleshooting

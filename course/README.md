@@ -4,7 +4,7 @@ English is the only active edition during the initial build. The course will be 
 
 | Edition | Entry point | Current state |
 |---|---|---|
-| English | [course/en/](en/) | Active — Module 00 draft |
+| English | [course/en/](en/) | Active — Modules 00–01 draft |
 | Simplified Chinese | `course/zh-CN/` | Frozen placeholder |
 | Japanese | `course/ja/` | Frozen placeholder |
 

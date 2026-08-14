@@ -277,4 +277,4 @@ A completed local copy of [CHECKLIST.md](CHECKLIST.md) and a saved DSH session s
 
 ## Next module
 
-Module 01 — Agent = Model + Harness is planned. Until it is published, use [the syllabus](../../../SYLLABUS.md) as the learning map.
+[Continue to Module 01 — Agent = Model + Harness](../01-agent-model-harness/README.md) to map the model, live agent, harness runtime, application, and capability boundaries behind this first task.
