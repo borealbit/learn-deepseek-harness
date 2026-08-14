@@ -35,9 +35,12 @@ The structure separates canonical English course content, runnable artifacts, li
 │   │   ├── 03-runtime-modes/
 │   │   │   ├── README.md
 │   │   │   └── MODE-COMPARISON.md
-│   │   └── 04-models-providers-workspaces-sessions/
+│   │   ├── 04-models-providers-workspaces-sessions/
+│   │   │   ├── README.md
+│   │   │   └── CONFIG-AND-SESSION-STRATEGY.md
+│   │   └── 05-safe-agentic-coding-workflows/
 │   │       ├── README.md
-│   │       └── CONFIG-AND-SESSION-STRATEGY.md
+│   │       └── SAFE-CHANGE-CHECKLIST.md
 │   ├── zh-CN/
 │   │   └── README.md
 │   └── ja/
@@ -47,13 +50,22 @@ The structure separates canonical English course content, runnable artifacts, li
 │   └── VERSIONING.md
 ├── projects/
 │   ├── README.md
-│   └── quick-start-workspace/
+│   ├── quick-start-workspace/
+│   │   ├── README.md
+│   │   ├── package.json
+│   │   ├── notes/
+│   │   │   └── project-goals.md
+│   │   └── src/
+│   │       └── greeting.js
+│   └── safe-change-workspace/
+│       ├── AGENTS.md
+│       ├── CHANGE-REQUEST.md
 │       ├── README.md
 │       ├── package.json
-│       ├── notes/
-│       │   └── project-goals.md
-│       └── src/
-│           └── greeting.js
+│       ├── src/
+│       │   └── slugify.js
+│       └── test/
+│           └── slugify.test.js
 ├── plugins/
 │   └── README.md
 ├── resources/

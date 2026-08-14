@@ -57,7 +57,13 @@ This roadmap is milestone-based. DeepSeek Harness is a fast-moving developer pre
 
 ## Milestone 3 — English plugin builder track
 
-- [ ] Publish and verify Modules 05–08
+- [x] Research official planning, permission, approval, sandbox, instruction, diff, and recovery flows
+- [x] Draft Module 05 in English
+- [x] Add the dependency-free Safe Change Workspace
+- [x] Add the reusable safe-change checklist
+- [ ] Run Module 05's plan, permission, mutation, audit, and recovery lab on clean macOS and Linux environments
+- [ ] Complete an independent learner pass and mark Module 05 verified
+- [ ] Publish and verify Modules 06–08
 - [ ] Create the first native DSH tool plugin
 - [ ] Add permission-gate and context-injection examples
 - [ ] Publish the Plugin / Tool / Skill / MCP decision matrix

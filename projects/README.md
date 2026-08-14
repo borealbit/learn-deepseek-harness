@@ -6,7 +6,8 @@ Runnable artifacts live here. They turn course concepts into evidence that learn
 
 | Project | Related modules | Purpose | Status |
 |---|---|---|---|
-| [Quick Start Workspace](quick-start-workspace/) | 00, 05 | Safe first-run and change-review exercises | Draft |
+| [Quick Start Workspace](quick-start-workspace/) | 00 | Safe first-run inspection exercise | Draft |
+| [Safe Change Workspace](safe-change-workspace/) | 05 | Plan, test, audit, and recover one bounded code change | Draft |
 | Mode Comparison Lab | 03, 10 | Compare behavior under controlled inputs | Planned |
 | Provider Configuration Lab | 04 | Practice sanitized provider setup | Planned |
 | Release Readiness Agent | 05–12 | Integrate safety, tools, workflows, and evaluation | Planned |

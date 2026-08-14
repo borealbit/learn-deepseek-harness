@@ -488,4 +488,4 @@ One completed, sanitized [configuration and Session strategy](CONFIG-AND-SESSION
 
 ## Next module
 
-[Module 05 — Safe Agentic Coding Workflows](../../../SYLLABUS.md#module-05--safe-agentic-coding-workflows) is planned. Until it is published, use the syllabus as the learning map.
+Continue to [Module 05 — Safe Agentic Coding Workflows](../05-safe-agentic-coding-workflows/README.md) to turn those boundaries into a least-privilege, test-first change process.
