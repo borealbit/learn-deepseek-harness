@@ -12,7 +12,7 @@ Runnable artifacts live here. They turn course concepts into evidence that learn
 | [Delegated Review Workflow](delegated-review-workflow/) | 09 | Exercise bounded structured delegation, cancellation, and a parent-owned human checkpoint | Draft |
 | [Mode Comparison Lab](mode-comparison-lab/) | 03, 10 | Compare paired golden-task behavior, trace evidence, recovery, and cost under controlled inputs | Draft |
 | Provider Configuration Lab | 04 | Practice sanitized provider setup | Planned |
-| Release Readiness Agent | 05–12 | Integrate safety, tools, workflows, and evaluation | Planned |
+| [Release Readiness Agent](release-readiness-agent/) | 05–12 | Integrate bounded inspection, plan identity, checks, one-shot mutation approval, delegation, and Session evidence without granting release authority | Draft |
 
 ## Project requirements
 

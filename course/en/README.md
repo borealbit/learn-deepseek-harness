@@ -35,7 +35,7 @@ This is the canonical and currently active edition of Learn DeepSeek Harness.
 
 | # | Module | Status |
 |---:|---|---|
-| 12 | Release Readiness Agent | Planned |
+| 12 | [Release Readiness Agent](12-capstone-release-readiness-agent/README.md) | Draft |
 
 Read [SYLLABUS.md](../../SYLLABUS.md) for learning objectives, lesson plans, and required evidence.
 

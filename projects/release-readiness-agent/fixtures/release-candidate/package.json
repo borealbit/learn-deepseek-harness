@@ -1,0 +1,22 @@
+{
+  "name": "@example/release-candidate",
+  "version": "1.0.0",
+  "description": "Synthetic package used by the Module 12 capstone",
+  "private": false,
+  "author": "Fixture Maintainer",
+  "type": "module",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://example.invalid/release-candidate.git"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "lint": "node scripts/check.mjs lint",
+    "test": "node scripts/check.mjs test",
+    "build": "node scripts/check.mjs build"
+  }
+}
+

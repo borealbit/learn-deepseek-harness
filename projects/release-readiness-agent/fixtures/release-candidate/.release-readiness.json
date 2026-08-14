@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "rootLabel": "synthetic/release-candidate",
+  "instructionFiles": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "scan": {
+    "maxFiles": 128,
+    "maxFileBytes": 65536,
+    "maxTotalBytes": 524288,
+    "maxFindings": 20
+  },
+  "commands": [
+    {
+      "id": "lint",
+      "argv": ["node", "scripts/check.mjs", "lint"],
+      "writesWorkspace": false,
+      "timeoutMs": 5000
+    },
+    {
+      "id": "test",
+      "argv": ["node", "scripts/check.mjs", "test"],
+      "writesWorkspace": false,
+      "timeoutMs": 5000
+    },
+    {
+      "id": "build",
+      "argv": ["node", "scripts/check.mjs", "build"],
+      "writesWorkspace": true,
+      "allowedWritePaths": ["dist/artifact.json"],
+      "timeoutMs": 5000
+    }
+  ],
+  "release": {
+    "requiredFiles": [
+      "README.md",
+      "SECURITY.md",
+      "CHANGELOG.md",
+      "NOTICE"
+    ],
+    "requiredManifestFields": [
+      "name",
+      "version",
+      "license",
+      "repository",
+      "engines"
+    ]
+  }
+}
+

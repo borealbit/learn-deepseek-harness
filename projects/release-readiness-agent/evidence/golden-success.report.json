@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "runId": "module12-golden-success",
+  "generatedAt": "2026-08-14T00:00:00.000Z",
+  "target": "synthetic/release-candidate",
+  "compatibility": {
+    "installPackage": "@deepseek-ai/dsh@0.1.0-rc.6",
+    "sessionPackage": "@deepseek-ai/dsh-session@0.1.0-rc.6",
+    "workflowPackages": "@deepseek-ai/dsh-workflow* @0.1.0-rc.6",
+    "upstreamCommit": "47f943859bef60e4160492346772ded9b24f765a"
+  },
+  "decision": "READY_FOR_HUMAN_REVIEW",
+  "releaseAuthorized": false,
+  "humanApprovalRequired": true,
+  "mutationPerformed": true,
+  "plan": {
+    "schemaVersion": 1,
+    "target": "synthetic/release-candidate",
+    "readOnlyDefault": true,
+    "releaseAuthorizationExcluded": true,
+    "steps": [
+      {
+        "id": "instructions",
+        "action": "Discover bounded root instructions",
+        "mutates": false
+      },
+      {
+        "id": "metadata",
+        "action": "Inspect release metadata and required documents",
+        "mutates": false
+      },
+      {
+        "id": "secrets",
+        "action": "Scan bounded files for obvious secret risks",
+        "mutates": false
+      },
+      {
+        "id": "command:lint",
+        "action": "Run lint with shell disabled",
+        "argv": [
+          "node",
+          "scripts/check.mjs",
+          "lint"
+        ],
+        "mutates": false,
+        "allowedWritePaths": [],
+        "approvalRequired": false
+      },
+      {
+        "id": "command:test",
+        "action": "Run test with shell disabled",
+        "argv": [
+          "node",
+          "scripts/check.mjs",
+          "test"
+        ],
+        "mutates": false,
+        "allowedWritePaths": [],
+        "approvalRequired": false
+      },
+      {
+        "id": "command:build",
+        "action": "Run build with shell disabled",
+        "argv": [
+          "node",
+          "scripts/check.mjs",
+          "build"
+        ],
+        "mutates": true,
+        "allowedWritePaths": [
+          "dist/artifact.json"
+        ],
+        "approvalRequired": true
+      },
+      {
+        "id": "delegation",
+        "action": "Delegate one bounded sanitized risk synthesis",
+        "mutates": false
+      },
+      {
+        "id": "report",
+        "action": "Return report and Session JSONL on standard output",
+        "mutates": false
+      }
+    ],
+    "sha256": "77c1b871377c98fff103f656432343681b3cdf23cbe29f3fef565e3468452997"
+  },
+  "inspection": {
+    "instructions": [
+      {
+        "path": "AGENTS.md",
+        "bytes": 427,
+        "sha256": "44cd62b4a5d60b36aae38c25b22cbfd77683331983bd63b0c113d34f340e06f1"
+      }
+    ],
+    "manifest": {
+      "name": "@example/release-candidate",
+      "version": "1.0.0",
+      "private": false,
+      "license": "Apache-2.0",
+      "engineNode": ">=22.19.0",
+      "scriptNames": [
+        "build",
+        "lint",
+        "test"
+      ],
+      "missingManifestFields": [],
+      "missingFiles": []
+    },
+    "secretScan": {
+      "complete": true,
+      "filesConsidered": 9,
+      "scannedBytes": 4759,
+      "findings": [],
+      "skippedSymlinks": [],
+      "skippedOversized": 0,
+      "skippedBinary": 0,
+      "fileCapReached": false,
+      "totalByteCapReached": false
+    }
+  },
+  "commands": [
+    {
+      "id": "lint",
+      "status": "passed",
+      "reason": null,
+      "writesWorkspace": false,
+      "allowedWritePaths": [],
+      "changedPaths": [],
+      "undeclaredWritePaths": [],
+      "approvalOutcome": "not-required",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 5,
+      "stdout": "lint: pass",
+      "stdoutTruncated": false,
+      "stderr": "",
+      "stderrTruncated": false
+    },
+    {
+      "id": "test",
+      "status": "passed",
+      "reason": null,
+      "writesWorkspace": false,
+      "allowedWritePaths": [],
+      "changedPaths": [],
+      "undeclaredWritePaths": [],
+      "approvalOutcome": "not-required",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 5,
+      "stdout": "test: pass",
+      "stdoutTruncated": false,
+      "stderr": "",
+      "stderrTruncated": false
+    },
+    {
+      "id": "build",
+      "status": "passed",
+      "reason": null,
+      "writesWorkspace": true,
+      "allowedWritePaths": [
+        "dist/artifact.json"
+      ],
+      "changedPaths": [
+        "dist/artifact.json"
+      ],
+      "undeclaredWritePaths": [],
+      "approvalOutcome": "allowed-once",
+      "exitCode": 0,
+      "signal": null,
+      "durationMs": 5,
+      "stdout": "build: pass; wrote dist/artifact.json",
+      "stdoutTruncated": false,
+      "stderr": "",
+      "stderrTruncated": false
+    }
+  ],
+  "approvalEvents": [
+    {
+      "type": "approval/asked",
+      "actionId": "command:build:77c1b871377c",
+      "reason": "build may write only: dist/artifact.json"
+    },
+    {
+      "type": "approval/decided",
+      "actionId": "command:build:77c1b871377c",
+      "outcome": "allowed-once"
+    }
+  ],
+  "delegation": {
+    "status": "completed",
+    "review": {
+      "recommendation": "human-review",
+      "rationale": "The bounded checks pass, but a human still owns release authorization.",
+      "requiredActions": [
+        "Review the complete report and authorize release outside this fixture."
+      ],
+      "unknowns": [
+        "The deterministic provider has no model, registry, network, browser, or production repository access."
+      ]
+    },
+    "events": [
+      {
+        "type": "workflow/start",
+        "name": "release-readiness-risk-review"
+      },
+      {
+        "type": "workflow/phase",
+        "title": "Risk synthesis"
+      },
+      {
+        "type": "workflow/agent-start",
+        "sequence": 1,
+        "label": "release-risk-reviewer"
+      },
+      {
+        "type": "workflow/agent-end",
+        "sequence": 1,
+        "outcome": "completed"
+      },
+      {
+        "type": "workflow/end",
+        "stopReason": "completed",
+        "agentsStarted": 1
+      }
+    ],
+    "starts": 1,
+    "disposals": 1
+  },
+  "blockerIds": [],
+  "warningIds": [],
+  "limitations": [
+    "The obvious-secret scan is bounded pattern matching, not proof that secrets are absent.",
+    "Command write-path verification is after-the-fact; use an OS sandbox for untrusted commands.",
+    "The deterministic delegated provider measures orchestration contracts, not model judgment.",
+    "No registry, provenance, browser, authenticated provider, production repository, or cross-platform release was verified.",
+    "READY_FOR_HUMAN_REVIEW is not GO and never authorizes publication."
+  ],
+  "evidence": {
+    "format": "DeepSeek Harness Session JSONL",
+    "eventCount": 19,
+    "sha256": "3d8869489f5729adda629143b8c8c576efdea15355f7c908961dd0e3d5e598e9"
+  }
+}

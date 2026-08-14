@@ -678,5 +678,5 @@ or package tarballs.
 
 ## Next
 
-Continue with **Module 12 — Capstone: Release Readiness Agent** when its draft
-is published.
+Continue with
+[Module 12 — Capstone: Release Readiness Agent](../12-capstone-release-readiness-agent/README.md).

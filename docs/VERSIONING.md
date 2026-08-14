@@ -78,4 +78,4 @@ Changes involving credentials, filesystem policy, command execution, approval fl
 
 | Course release | Install package | Upstream source | Verified platforms | Status |
 |---|---|---|---|---|
-| `0.1.0-dev` | `@deepseek-ai/dsh@0.1.0-rc.6` | `47f943859bef60e4160492346772ded9b24f765a` | None | Modules 00–11 draft; source, local runtime, release, or learner verification remains incomplete by module |
+| `0.1.0-dev` | `@deepseek-ai/dsh@0.1.0-rc.6` | `47f943859bef60e4160492346772ded9b24f765a` | None | Modules 00–12 draft; source, local runtime, release, security, platform, or learner verification remains incomplete by module |

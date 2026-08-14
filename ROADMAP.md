@@ -102,8 +102,14 @@ This roadmap is milestone-based. DeepSeek Harness is a fast-moving developer pre
 - [x] Add the Repository Inspector release contract, checklist, draft notes, security/change documents, and dated audit record
 - [x] Run strict type, thirteen tests, prospective/repeated actual pack, exact rc.6 tarball/profile/config, Loader/Web HTTP boot, shutdown, and removal checks
 - [ ] Resolve Module 11's public repository/security, npm identity, protected same-artifact publication, provenance, registry, authenticated/browser, cross-platform, upgrade, and learner gates
-- [ ] Complete outstanding verification for Modules 09–11
-- [ ] Build the Release Readiness Agent
+- [x] Research official agent lifecycle, Tool execution, instructions, approval, Session, subagent, workflow, persistence, and telemetry contracts
+- [x] Draft Module 12 in English
+- [x] Build the mutation-gated Release Readiness Agent with a strict repository contract and explicit non-authorization
+- [x] Add thirteen keyless safety, plan, approval, mutation, delegation, Session, and evidence tests
+- [x] Add deterministic success and blocked reports, validated Session JSONL, a threat model, capstone evidence record, and final retrospective
+- [ ] Run Module 12 with an OS sandbox, authenticated provider, auditable human approval, production persistence/telemetry policy, and protected release gates
+- [ ] Complete cross-platform, security, and independent learner passes for Module 12
+- [ ] Complete outstanding verification for Modules 09–12
 - [x] Add initial golden tasks and regression reporting in Module 10
 - [x] Document initial failure recovery and upgrade workflows in Modules 10–11
 - [ ] Publish English v1

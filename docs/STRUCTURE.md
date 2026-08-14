@@ -50,9 +50,21 @@ The structure separates canonical English course content, runnable artifacts, li
 │   │   ├── 08-hooks-context-session-engineering/
 │   │   │   ├── README.md
 │   │   │   └── POLICY-AUDIT-RECORD.md
-│   │   └── 09-subagents-workflows-automation/
+│   │   ├── 09-subagents-workflows-automation/
+│   │   │   ├── README.md
+│   │   │   └── WORKFLOW-RUN-RECORD.md
+│   │   ├── 10-tracing-evaluation-failure-recovery/
+│   │   │   ├── README.md
+│   │   │   └── EVALUATION-REPORT.md
+│   │   ├── 11-package-publish-maintain/
+│   │   │   ├── README.md
+│   │   │   ├── RELEASE-AUDIT-RECORD.md
+│   │   │   ├── RELEASE-NOTES-DRAFT.md
+│   │   │   └── RELEASE-READINESS-CHECKLIST.md
+│   │   └── 12-capstone-release-readiness-agent/
 │   │       ├── README.md
-│   │       └── WORKFLOW-RUN-RECORD.md
+│   │       ├── CAPSTONE-EVIDENCE.md
+│   │       └── FINAL-RETROSPECTIVE.md
 │   ├── zh-CN/
 │   │   └── README.md
 │   └── ja/
@@ -86,11 +98,31 @@ The structure separates canonical English course content, runnable artifacts, li
 │   │   │   └── validate-matrix.js
 │   │   └── test/
 │   │       └── validate-matrix.test.js
-│   └── delegated-review-workflow/
+│   ├── delegated-review-workflow/
+│   │   ├── README.md
+│   │   ├── NOTICE
+│   │   ├── package.json
+│   │   ├── package-lock.json
+│   │   ├── fixtures/
+│   │   ├── scripts/
+│   │   ├── src/
+│   │   └── test/
+│   ├── mode-comparison-lab/
+│   │   ├── README.md
+│   │   ├── NOTICE
+│   │   ├── package.json
+│   │   ├── package-lock.json
+│   │   ├── fixtures/
+│   │   ├── scripts/
+│   │   ├── src/
+│   │   └── test/
+│   └── release-readiness-agent/
 │       ├── README.md
+│       ├── THREAT-MODEL.md
 │       ├── NOTICE
 │       ├── package.json
 │       ├── package-lock.json
+│       ├── evidence/
 │       ├── fixtures/
 │       ├── scripts/
 │       ├── src/
