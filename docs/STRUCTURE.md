@@ -47,9 +47,12 @@ The structure separates canonical English course content, runnable artifacts, li
 │   │   ├── 07-build-first-dsh-plugin/
 │   │   │   ├── README.md
 │   │   │   └── PLUGIN-BUILD-RECORD.md
-│   │   └── 08-hooks-context-session-engineering/
+│   │   ├── 08-hooks-context-session-engineering/
+│   │   │   ├── README.md
+│   │   │   └── POLICY-AUDIT-RECORD.md
+│   │   └── 09-subagents-workflows-automation/
 │   │       ├── README.md
-│   │       └── POLICY-AUDIT-RECORD.md
+│   │       └── WORKFLOW-RUN-RECORD.md
 │   ├── zh-CN/
 │   │   └── README.md
 │   └── ja/
@@ -75,14 +78,23 @@ The structure separates canonical English course content, runnable artifacts, li
 │   │   │   └── slugify.js
 │   │   └── test/
 │   │       └── slugify.test.js
-│   └── extension-selection-lab/
+│   ├── extension-selection-lab/
+│   │   ├── README.md
+│   │   ├── SCENARIOS.md
+│   │   ├── package.json
+│   │   ├── src/
+│   │   │   └── validate-matrix.js
+│   │   └── test/
+│   │       └── validate-matrix.test.js
+│   └── delegated-review-workflow/
 │       ├── README.md
-│       ├── SCENARIOS.md
+│       ├── NOTICE
 │       ├── package.json
+│       ├── package-lock.json
+│       ├── fixtures/
+│       ├── scripts/
 │       ├── src/
-│       │   └── validate-matrix.js
 │       └── test/
-│           └── validate-matrix.test.js
 ├── plugins/
 │   ├── README.md
 │   ├── repository-inspector/

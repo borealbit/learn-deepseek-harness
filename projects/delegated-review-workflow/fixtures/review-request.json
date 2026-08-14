@@ -1,0 +1,10 @@
+{
+  "reviewId": "module09-synthetic-review",
+  "subject": "Read-only release-note generator",
+  "changeSummary": "A synthetic proposal adds a command that reads fixture metadata and writes a draft release note only after explicit human approval.",
+  "acceptanceCriteria": [
+    "Evidence collection must not mutate the fixture.",
+    "The final recommendation must identify unverified claims.",
+    "No mutation may occur before a human checkpoint."
+  ]
+}

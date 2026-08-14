@@ -87,6 +87,12 @@ This roadmap is milestone-based. DeepSeek Harness is a fast-moving developer pre
 
 ## Milestone 4 — English production practice and capstone
 
+- [x] Research official subagent provider, one-shot, continuation, workflow, worker-thread, cancellation, and schedule contracts
+- [x] Draft Module 09 in English
+- [x] Add the two-stage Delegated Review Workflow with structured evidence and verdict contracts
+- [x] Add seven keyless input, handoff, lifecycle, failure, cap, cancellation, and disposal tests plus a dated workflow run record
+- [ ] Run Module 09 with authenticated spawn/fork and one remote provider in isolated read-only environments
+- [ ] Verify continuable-child and persisted-schedule behavior and complete cross-platform and independent learner passes for Module 09
 - [ ] Publish and verify Modules 09–11
 - [ ] Build the Release Readiness Agent
 - [ ] Add golden tasks and regression reporting

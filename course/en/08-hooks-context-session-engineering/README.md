@@ -649,5 +649,5 @@ Session export.
 
 ## Next
 
-Continue with **Module 09 — Subagents, Workflows, and Automation** when its
-draft is published.
+Continue with
+[Module 09 — Subagents, Workflows, and Automation](../09-subagents-workflows-automation/README.md).

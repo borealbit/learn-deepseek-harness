@@ -6,7 +6,7 @@ Learn how to use and extend [DeepSeek Harness](https://github.com/deepseek-ai/de
 
 ## Project status
 
-**English-first development · Modules 00–08 in draft**
+**English-first development · Modules 00–09 in draft**
 
 The English course is the only active edition until English v1 is complete. Existing Simplified Chinese and Japanese placeholders are frozen; localization will resume after the English lessons and labs have been verified.
 
@@ -32,9 +32,11 @@ DeepSeek Harness is a developer preview and may introduce compatibility-breaking
 16. Build and test a native Tool in [Module 07 — Build Your First DSH Plugin](course/en/07-build-first-dsh-plugin/README.md).
 17. Audit its [plugin build record](course/en/07-build-first-dsh-plugin/PLUGIN-BUILD-RECORD.md) and inspect the maintained [Repository Inspector](plugins/repository-inspector/).
 18. Enforce and audit Tool policy in [Module 08 — Hooks, Context, and Session Engineering](course/en/08-hooks-context-session-engineering/README.md).
-19. Review its [policy audit record](course/en/08-hooks-context-session-engineering/POLICY-AUDIT-RECORD.md) and maintained [Tool Policy Gate](plugins/tool-policy-gate/), then continue through the [course syllabus](SYLLABUS.md).
+19. Review its [policy audit record](course/en/08-hooks-context-session-engineering/POLICY-AUDIT-RECORD.md) and maintained [Tool Policy Gate](plugins/tool-policy-gate/).
+20. Orchestrate bounded delegation in [Module 09 — Subagents, Workflows, and Automation](course/en/09-subagents-workflows-automation/README.md).
+21. Run the maintained [Delegated Review Workflow](projects/delegated-review-workflow/) and audit its [workflow run record](course/en/09-subagents-workflows-automation/WORKFLOW-RUN-RECORD.md), then continue through the [course syllabus](SYLLABUS.md).
 
-Modules 00–08 are currently **drafts with explicit evidence gaps**. Module 00 still requires clean-platform installation and an authenticated end-to-end run; Module 01 is a documentation-only architecture exercise awaiting an independent learner pass; Module 02 still requires a clean-platform default-config dump and learner pass; Module 03 requires its two authenticated comparison runs and learner pass; Module 04 requires its provider, Workspace, fork, and restart lab plus learner pass; Module 05 requires its authenticated plan, permission, mutation, audit, and recovery run plus learner pass; Module 06 requires a clean-platform decision-lab run and learner pass; Module 07 has passed local type, unit, real Tool Runtime, lifecycle, pack-dry-run, exact CLI/profile, Loader/Web HTTP boot, shutdown, and removal checks, but still requires browser Tool inspection, an authenticated model call, live reload, cross-platform, and learner verification; Module 08 has passed strict type, six keyless Tool policy and Session tests, pack-dry-run, exact CLI overlay/config, Loader/Web HTTP boot, and unload checks, but still requires authenticated model, persistent resume, browser, bundle-install, cross-platform, and learner verification. All nine record `@deepseek-ai/dsh@0.1.0-rc.6` as the install package and pin source review to upstream commit [`47f943859bef60e4160492346772ded9b24f765a`](https://github.com/deepseek-ai/deepseek-harness/commit/47f943859bef60e4160492346772ded9b24f765a).
+Modules 00–09 are currently **drafts with explicit evidence gaps**. Module 00 still requires clean-platform installation and an authenticated end-to-end run; Module 01 is a documentation-only architecture exercise awaiting an independent learner pass; Module 02 still requires a clean-platform default-config dump and learner pass; Module 03 requires its two authenticated comparison runs and learner pass; Module 04 requires its provider, Workspace, fork, and restart lab plus learner pass; Module 05 requires its authenticated plan, permission, mutation, audit, and recovery run plus learner pass; Module 06 requires a clean-platform decision-lab run and learner pass; Module 07 has passed local type, unit, real Tool Runtime, lifecycle, pack-dry-run, exact CLI/profile, Loader/Web HTTP boot, shutdown, and removal checks, but still requires browser Tool inspection, an authenticated model call, live reload, cross-platform, and learner verification; Module 08 has passed strict type, six keyless Tool policy and Session tests, pack-dry-run, exact CLI overlay/config, Loader/Web HTTP boot, and unload checks, but still requires authenticated model, persistent resume, browser, bundle-install, cross-platform, and learner verification; Module 09 has passed syntax checks, seven keyless tests through the real subagent service and worker-thread workflow engine, deterministic success/failure/cancellation scenarios, and offline lock replay, but still requires authenticated and remote providers, continuable and schedule persistence, browser, durable-job, cross-platform, and learner verification. All ten record `@deepseek-ai/dsh@0.1.0-rc.6` as the install package and pin source review to upstream commit [`47f943859bef60e4160492346772ded9b24f765a`](https://github.com/deepseek-ai/deepseek-harness/commit/47f943859bef60e4160492346772ded9b24f765a).
 
 ## What makes this course different
 
@@ -79,7 +81,7 @@ By the end of the course, you should be able to:
 | 06 | [Plugins vs Tools vs Skills vs MCP](course/en/06-plugins-tools-skills-mcp/README.md) | Builder | Draft |
 | 07 | [Build Your First DSH Plugin](course/en/07-build-first-dsh-plugin/README.md) | Builder | Draft |
 | 08 | [Hooks, Context, and Session Engineering](course/en/08-hooks-context-session-engineering/README.md) | Builder | Draft |
-| 09 | Subagents, Workflows, and Automation | Production | Planned |
+| 09 | [Subagents, Workflows, and Automation](course/en/09-subagents-workflows-automation/README.md) | Production | Draft |
 | 10 | Tracing, Evaluation, and Failure Recovery | Production | Planned |
 | 11 | Package, Publish, and Maintain | Production | Planned |
 | 12 | Capstone: Release Readiness Agent | Capstone | Planned |

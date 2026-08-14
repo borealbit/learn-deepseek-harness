@@ -27,7 +27,7 @@ This is the canonical and currently active edition of Learn DeepSeek Harness.
 
 | # | Module | Status |
 |---:|---|---|
-| 09 | Subagents, Workflows, and Automation | Planned |
+| 09 | [Subagents, Workflows, and Automation](09-subagents-workflows-automation/README.md) | Draft |
 | 10 | Tracing, Evaluation, and Failure Recovery | Planned |
 | 11 | Package, Publish, and Maintain | Planned |
 

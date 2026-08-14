@@ -1,0 +1,30 @@
+{
+  "name": "@borealbit/delegated-review-workflow",
+  "version": "0.1.0",
+  "description": "Keyless two-stage review workflow fixture for DeepSeek Harness",
+  "private": true,
+  "author": "Dom Liu",
+  "type": "module",
+  "packageManager": "npm@11.9.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borealbit/learn-deepseek-harness.git",
+    "directory": "projects/delegated-review-workflow"
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "scripts": {
+    "check": "node --check src/review-workflow.mjs && node --check src/fixture-runtime.mjs && node --check scripts/run-keyless.mjs && node --check test/review-workflow.test.mjs",
+    "demo": "node scripts/run-keyless.mjs",
+    "test": "node --test test/review-workflow.test.mjs"
+  },
+  "dependencies": {
+    "@deepseek-ai/cordis": "4.0.1",
+    "@deepseek-ai/dsh-subagent": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-tools": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-workflow": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-workflow-worker-thread": "0.1.0-rc.6"
+  }
+}
