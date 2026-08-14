@@ -10,7 +10,7 @@ Runnable artifacts live here. They turn course concepts into evidence that learn
 | [Safe Change Workspace](safe-change-workspace/) | 05 | Plan, test, audit, and recover one bounded code change | Draft |
 | [Extension Selection Lab](extension-selection-lab/) | 06 | Compare Tool, Skill, MCP, and native plugin architecture stacks | Draft |
 | [Delegated Review Workflow](delegated-review-workflow/) | 09 | Exercise bounded structured delegation, cancellation, and a parent-owned human checkpoint | Draft |
-| Mode Comparison Lab | 03, 10 | Compare behavior under controlled inputs | Planned |
+| [Mode Comparison Lab](mode-comparison-lab/) | 03, 10 | Compare paired golden-task behavior, trace evidence, recovery, and cost under controlled inputs | Draft |
 | Provider Configuration Lab | 04 | Practice sanitized provider setup | Planned |
 | Release Readiness Agent | 05–12 | Integrate safety, tools, workflows, and evaluation | Planned |
 

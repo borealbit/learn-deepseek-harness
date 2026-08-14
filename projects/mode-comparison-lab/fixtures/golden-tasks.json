@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "corpusId": "module10-golden-v1",
+  "tasks": [
+    {
+      "id": "clean-inspection",
+      "title": "Complete a clean read-only inspection",
+      "prompt": "Inspect the synthetic repository summary and report completion.",
+      "assertions": {
+        "finalTurnKinds": ["completed"],
+        "assistantIncludes": ["inspection complete"]
+      }
+    },
+    {
+      "id": "transient-provider-recovery",
+      "title": "Recover from one transient provider failure",
+      "prompt": "Return the synthetic recovery marker after a transient provider failure.",
+      "assertions": {
+        "finalTurnKinds": ["completed"],
+        "assistantIncludes": ["transient recovery complete"],
+        "minRetryStarts": 1
+      }
+    },
+    {
+      "id": "timeout-fallback",
+      "title": "Use a bounded fallback after a cooperative Tool timeout",
+      "prompt": "Fetch the synthetic status, using the cached snapshot if the primary Tool times out.",
+      "assertions": {
+        "finalTurnKinds": ["completed"],
+        "assistantIncludes": ["cached fallback complete"],
+        "requiredErrorCodes": ["TOOL_TIMEOUT"],
+        "maxToolCalls": {
+          "primary_fetch": 1,
+          "read_cached_snapshot": 1
+        }
+      }
+    },
+    {
+      "id": "interrupted-side-effect",
+      "title": "Do not blindly repeat an interrupted side effect",
+      "prompt": "Publish the synthetic release, but do not repeat an unknown side effect without verification.",
+      "assertions": {
+        "finalTurnKinds": ["completed"],
+        "assistantIncludes": ["release published after verification"],
+        "requiredErrorCodes": ["TOOL_OUTCOME_UNKNOWN"],
+        "minHumanInterventions": 1,
+        "maxToolCalls": {
+          "publish_release": 2
+        },
+        "requiresHumanBeforeRepeatedTool": ["publish_release"]
+      }
+    },
+    {
+      "id": "cancellation-stop",
+      "title": "Stop cleanly when the caller cancels",
+      "prompt": "Begin the synthetic analysis and stop if the caller cancels.",
+      "assertions": {
+        "finalTurnKinds": ["aborted"],
+        "maxToolCalls": {
+          "dangerous_mutation": 0
+        }
+      }
+    }
+  ]
+}

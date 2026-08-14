@@ -1,0 +1,20 @@
+{
+  "name": "@borealbit/mode-comparison-lab",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Deterministic Session-trace evaluation lab for Learn DeepSeek Harness Module 10",
+  "type": "module",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "scripts": {
+    "check": "node --check src/*.mjs && node --check scripts/*.mjs && node --check fixtures/*.mjs",
+    "test": "node --test",
+    "evaluate": "node scripts/run-evaluation.mjs",
+    "materialize": "node scripts/run-evaluation.mjs --write-traces actual/session-logs"
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh-session": "0.1.0-rc.6"
+  },
+  "license": "Apache-2.0"
+}

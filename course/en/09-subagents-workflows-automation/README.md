@@ -561,5 +561,5 @@ output.
 
 ## Next
 
-Continue with **Module 10 — Tracing, Evaluation, and Failure Recovery** when
-its draft is published.
+Continue with
+[**Module 10 — Tracing, Evaluation, and Failure Recovery**](../10-tracing-evaluation-failure-recovery/README.md).
