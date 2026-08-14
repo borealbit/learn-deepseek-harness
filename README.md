@@ -6,7 +6,7 @@ Learn how to use and extend [DeepSeek Harness](https://github.com/deepseek-ai/de
 
 ## Project status
 
-**English-first development · Modules 00–01 in draft**
+**English-first development · Modules 00–02 in draft**
 
 The English course is the only active edition until English v1 is complete. Existing Simplified Chinese and Japanese placeholders are frozen; localization will resume after the English lessons and labs have been verified.
 
@@ -18,9 +18,11 @@ DeepSeek Harness is a developer preview and may introduce compatibility-breaking
 2. Use the included [practice workspace](projects/quick-start-workspace/).
 3. Record the result in the [first-run checklist](course/en/00-quick-start/CHECKLIST.md).
 4. Build the runtime mental model in [Module 01 — Agent = Model + Harness](course/en/01-agent-model-harness/README.md).
-5. Complete its [one-page architecture map](course/en/01-agent-model-harness/ARCHITECTURE-MAP.md), then continue through the [course syllabus](SYLLABUS.md).
+5. Complete its [one-page architecture map](course/en/01-agent-model-harness/ARCHITECTURE-MAP.md).
+6. Learn how the runtime is composed in [Module 02 — Understanding the Plugin Architecture](course/en/02-plugin-architecture/README.md).
+7. Annotate the default Web composition with the [Module 02 plugin map](course/en/02-plugin-architecture/PLUGIN-MAP.md), then continue through the [course syllabus](SYLLABUS.md).
 
-Modules 00 and 01 are currently **source-reviewed drafts**. Module 00 still requires clean-platform installation and an authenticated end-to-end run; Module 01 is a documentation-only architecture exercise awaiting an independent learner pass. Both record `@deepseek-ai/dsh@0.1.0-rc.6` as the install package and pin source review to upstream commit [`47f943859bef60e4160492346772ded9b24f765a`](https://github.com/deepseek-ai/deepseek-harness/commit/47f943859bef60e4160492346772ded9b24f765a).
+Modules 00–02 are currently **source-reviewed drafts**. Module 00 still requires clean-platform installation and an authenticated end-to-end run; Module 01 is a documentation-only architecture exercise awaiting an independent learner pass; Module 02 still requires a clean-platform default-config dump and learner pass. All three record `@deepseek-ai/dsh@0.1.0-rc.6` as the install package and pin source review to upstream commit [`47f943859bef60e4160492346772ded9b24f765a`](https://github.com/deepseek-ai/deepseek-harness/commit/47f943859bef60e4160492346772ded9b24f765a).
 
 ## What makes this course different
 
@@ -58,7 +60,7 @@ By the end of the course, you should be able to:
 |---:|---|---|---|
 | 00 | [Quick Start: From Zero to First Safe Task](course/en/00-quick-start/README.md) | Operator | Draft |
 | 01 | [Agent = Model + Harness](course/en/01-agent-model-harness/README.md) | Operator | Draft |
-| 02 | Understanding the Plugin Architecture | Operator | Planned |
+| 02 | [Understanding the Plugin Architecture](course/en/02-plugin-architecture/README.md) | Operator | Draft |
 | 03 | Mastering the Four Runtime Modes | Operator | Planned |
 | 04 | Models, Providers, Workspaces, and Sessions | Operator | Planned |
 | 05 | Safe Agentic Coding Workflows | Builder | Planned |

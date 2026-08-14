@@ -306,4 +306,4 @@ One completed, sanitized copy of [ARCHITECTURE-MAP.md](ARCHITECTURE-MAP.md) that
 
 ## Next module
 
-[Module 02 — Understanding the Plugin Architecture](../../../SYLLABUS.md#module-02--understanding-the-plugin-architecture) is planned. Until it is published, use the syllabus as the learning map.
+Continue to [Module 02 — Understanding the Plugin Architecture](../02-plugin-architecture/README.md) to trace profiles, bundles, patches, plugin fibers, events, and replaceable capability seams.

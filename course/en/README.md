@@ -10,7 +10,7 @@ This is the canonical and currently active edition of Learn DeepSeek Harness.
 |---:|---|---|
 | 00 | [Quick Start: From Zero to First Safe Task](00-quick-start/README.md) | Draft |
 | 01 | [Agent = Model + Harness](01-agent-model-harness/README.md) | Draft |
-| 02 | Understanding the Plugin Architecture | Planned |
+| 02 | [Understanding the Plugin Architecture](02-plugin-architecture/README.md) | Draft |
 | 03 | Mastering the Four Runtime Modes | Planned |
 | 04 | Models, Providers, Workspaces, and Sessions | Planned |
 

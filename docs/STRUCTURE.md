@@ -26,9 +26,12 @@ The structure separates canonical English course content, runnable artifacts, li
 │   │   ├── 00-quick-start/
 │   │   │   ├── README.md
 │   │   │   └── CHECKLIST.md
-│   │   └── 01-agent-model-harness/
+│   │   ├── 01-agent-model-harness/
+│   │   │   ├── README.md
+│   │   │   └── ARCHITECTURE-MAP.md
+│   │   └── 02-plugin-architecture/
 │   │       ├── README.md
-│   │       └── ARCHITECTURE-MAP.md
+│   │       └── PLUGIN-MAP.md
 │   ├── zh-CN/
 │   │   └── README.md
 │   └── ja/
