@@ -1,6 +1,6 @@
 # Learn DeepSeek Harness
 
-> An independent, project-based learning resource by [Borealbit](https://github.com/borealbit). This project is not affiliated with, endorsed by, or maintained by DeepSeek.
+> An independent, project-based learning resource created by **Dom Liu** and published by [Borealbit](https://github.com/borealbit). This project is not affiliated with, endorsed by, or maintained by DeepSeek.
 
 Learn how to use and extend [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)—from the first safe run to production-minded plugins, workflows, and agent systems.
 
@@ -92,6 +92,15 @@ See [docs/STRUCTURE.md](docs/STRUCTURE.md) for the full information architecture
 - [DeepSeek Harness architecture](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/architecture.md)
 - [Extension cookbook](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/cookbook/extension-cookbook.md)
 - [Cordis](https://github.com/cordiverse/cordis)
+
+## License and attribution
+
+Copyright © 2026 **Borealbit Technology Limited**. **Dom Liu** is the creator and designated attribution party for this project.
+
+- Original course text, documentation, diagrams, and other non-software educational materials are licensed under [Creative Commons Attribution 4.0 International](LICENSE).
+- Original software code, plugins, scripts, executable examples, and code samples are licensed under the [Apache License 2.0](LICENSE-CODE).
+
+When sharing or adapting the course materials, credit **Dom Liu**, retain the copyright notice and source link, link to CC BY 4.0, and indicate whether changes were made. See [LICENSES.md](LICENSES.md) for the exact scope, required attribution format, exclusions, and mixed-file rules.
 
 ## Independence and trademarks
 

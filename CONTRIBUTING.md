@@ -77,6 +77,12 @@ Do not present search snippets, social posts, or unverified third-party tutorial
 
 After English v1, localization will preserve module numbers, code, identifiers, paths, API names, upstream references, and expected outcomes. Japanese content will require natural-language review before parity is claimed. The repository owner will explicitly reopen localization work at that milestone.
 
+## Contribution licensing
+
+This repository uses the license boundaries defined in [LICENSES.md](LICENSES.md): educational content is licensed under CC BY 4.0, while software and code samples are licensed under Apache-2.0.
+
+By intentionally submitting a contribution for inclusion, you confirm that you have the right to submit it and agree that it will be licensed under the license applicable to the material you modify. A contribution that mixes content and software follows the mixed-file rules in `LICENSES.md`. Clearly identify third-party material and its license; do not submit material whose terms are incompatible with this repository.
+
 ## Community conduct
 
 Be precise, respectful, and generous with evidence. Critique implementations and claims, not people. Security concerns should be disclosed responsibly and should not include live secrets or instructions that enable abuse.

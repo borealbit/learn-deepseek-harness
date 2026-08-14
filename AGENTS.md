@@ -11,6 +11,7 @@ This repository is a versioned, English-first, project-based course about DeepSe
 - `course/en/` is the only active lesson edition.
 - `course/zh-CN/` and `course/ja/` are frozen placeholders during the English-first phase.
 - `docs/VERSIONING.md` defines verification requirements.
+- `LICENSES.md` defines the content/software license boundary and required attribution.
 - Official upstream code, documentation, and registry metadata outrank community summaries.
 
 ## Required workflow
@@ -34,6 +35,7 @@ Before editing technical content:
 - Images belong beside the lesson that uses them, in an `assets/` directory.
 - Generated logs and real credentials must never be committed.
 - Avoid duplicate copies of official documentation; explain and link instead.
+- Preserve the copyright holder, creator attribution, applicable license, and third-party exclusions.
 
 ## Writing standard
 
@@ -73,4 +75,5 @@ Do not edit translations unless the repository owner has reopened localization. 
 - Confirm internal Markdown links resolve.
 - Confirm every changed technical lesson has package, source, and verification metadata.
 - Confirm no credential-like values were introduced.
+- Confirm new material follows `LICENSES.md` and does not silently relicense third-party work.
 - Summarize changed files, checks performed, and unverified assumptions.
