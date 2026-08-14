@@ -77,8 +77,13 @@ This roadmap is milestone-based. DeepSeek Harness is a fast-moving developer pre
 - [x] Run the exact rc.6 CLI bundle/profile, config-dump, Loader/Web HTTP boot, shutdown, and removal smoke in disposable Linux paths
 - [ ] Run Module 07's browser, authenticated model, and reload lab on clean macOS and Linux environments
 - [ ] Review Windows symbolic-link behavior and complete an independent learner pass for Module 07
-- [ ] Publish and verify Module 08
-- [ ] Add permission-gate and context-injection examples
+- [x] Research official hook dispatch, prompt/context, Session surface, persistence, compaction, and Tool policy contracts
+- [x] Draft Module 08 in English
+- [x] Add the typed Tool Policy Gate with cooperative denial, monotonic fallback, and log-only audit evidence
+- [x] Add six keyless configuration, denial, privacy, ordering, and lifecycle tests plus a dated policy audit record
+- [x] Run strict type, package dry-run, exact rc.6 overlay/config, Loader/Web HTTP boot, shutdown, and unload checks
+- [ ] Run Module 08's authenticated denial, persistent Session resume, compaction/replay, and browser review
+- [ ] Run local bundle add/remove on a clean profile and complete cross-platform and independent learner passes for Module 08
 
 ## Milestone 4 — English production practice and capstone
 

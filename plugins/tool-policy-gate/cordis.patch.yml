@@ -1,0 +1,8 @@
+- insert:
+    - id: borealbit-tool-policy-gate
+      name: '@borealbit/dsh-tool-policy-gate'
+      config:
+        blockedTools:
+          - inspect_repository
+        ruleId: course.block.inspect-repository
+        reason: The Module 08 practice policy blocks this Tool.

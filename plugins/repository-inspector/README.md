@@ -43,7 +43,9 @@ sandbox. A privileged process can still read the configured tree, concurrent
 filesystem mutation can create time-of-check/time-of-use races, Windows
 symbolic-link behavior has not been verified, and filenames themselves may be
 sensitive. Configure a synthetic or deliberately scoped root, and add an
-independent policy hook before using the Tool with untrusted repositories.
+independent policy hook such as the course
+[Tool Policy Gate](../tool-policy-gate/) before using the Tool with untrusted
+repositories.
 
 ## Compatibility
 

@@ -7,7 +7,7 @@ This directory contains plugins authored and maintained as part of the course.
 | Plugin | Course role | Status |
 |---|---|---|
 | [Repository Inspector Tool](repository-inspector/) | First typed, bounded Tool plugin | Draft — local tests pass; complete product verification pending |
-| Permission Gate | Hook and fail-closed policy example | Planned |
+| [Tool Policy Gate](tool-policy-gate/) | Hook, monotonic guard, and log-only audit example | Draft — local tests and Loader/Web smoke pass; complete product verification pending |
 | Release Report Renderer | Structured result and presentation example | Planned |
 | Evaluation Recorder | Trace and metrics example | Planned |
 

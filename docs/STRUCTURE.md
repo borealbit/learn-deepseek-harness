@@ -44,9 +44,12 @@ The structure separates canonical English course content, runnable artifacts, li
 │   │   ├── 06-plugins-tools-skills-mcp/
 │   │   │   ├── README.md
 │   │   │   └── EXTENSION-DECISION-MATRIX.md
-│   │   └── 07-build-first-dsh-plugin/
+│   │   ├── 07-build-first-dsh-plugin/
+│   │   │   ├── README.md
+│   │   │   └── PLUGIN-BUILD-RECORD.md
+│   │   └── 08-hooks-context-session-engineering/
 │   │       ├── README.md
-│   │       └── PLUGIN-BUILD-RECORD.md
+│   │       └── POLICY-AUDIT-RECORD.md
 │   ├── zh-CN/
 │   │   └── README.md
 │   └── ja/
@@ -82,7 +85,24 @@ The structure separates canonical English course content, runnable artifacts, li
 │           └── validate-matrix.test.js
 ├── plugins/
 │   ├── README.md
-│   └── repository-inspector/
+│   ├── repository-inspector/
+│   │   ├── README.md
+│   │   ├── LICENSE
+│   │   ├── NOTICE
+│   │   ├── package.json
+│   │   ├── pnpm-lock.yaml
+│   │   ├── tsconfig.json
+│   │   ├── cordis.patch.yml
+│   │   ├── scripts/
+│   │   │   ├── clean.mjs
+│   │   │   └── create-overlay.mjs
+│   │   ├── src/
+│   │   │   ├── index.ts
+│   │   │   └── inspect-repository.ts
+│   │   └── test/
+│   │       ├── repository-inspector.test.js
+│   │       └── fixtures/
+│   └── tool-policy-gate/
 │       ├── README.md
 │       ├── LICENSE
 │       ├── NOTICE
@@ -91,14 +111,11 @@ The structure separates canonical English course content, runnable artifacts, li
 │       ├── tsconfig.json
 │       ├── cordis.patch.yml
 │       ├── scripts/
-│       │   ├── clean.mjs
-│       │   └── create-overlay.mjs
+│       │   └── clean.mjs
 │       ├── src/
-│       │   ├── index.ts
-│       │   └── inspect-repository.ts
+│       │   └── index.ts
 │       └── test/
-│           ├── repository-inspector.test.js
-│           └── fixtures/
+│           └── tool-policy-gate.test.js
 ├── resources/
 │   └── README.md
 └── templates/
