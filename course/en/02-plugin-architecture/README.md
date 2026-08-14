@@ -432,4 +432,4 @@ One completed, sanitized [Module 02 plugin map](PLUGIN-MAP.md) that shows the de
 
 ## Next module
 
-[Module 03 — Mastering the Four Runtime Modes](../../../SYLLABUS.md#module-03--mastering-the-four-runtime-modes) is planned. Until it is published, use the syllabus as the learning map.
+Continue to [Module 03 — Mastering the Four Runtime Modes](../03-runtime-modes/README.md) to compare the four built-in agent presets and choose one from task shape and trust boundary.

@@ -38,12 +38,16 @@ This roadmap is milestone-based. DeepSeek Harness is a fast-moving developer pre
 - [x] Research the official Cordis lifecycle, composition layers, events, and capability seams
 - [x] Draft Module 02 in English
 - [x] Add the annotated default-runtime plugin-map exercise
+- [x] Research the four official agent presets, tool presentation, and their trust boundaries
+- [x] Draft Module 03 in English
+- [x] Add the controlled Standard-versus-Code mode-comparison exercise
 - [ ] Complete an independent learner pass and mark Module 01 verified
 - [ ] Run Module 02's default Web config dump on clean macOS and Linux environments
 - [ ] Complete an independent learner pass and mark Module 02 verified
-- [ ] Publish and verify Modules 03–04
+- [ ] Run Module 03's comparison on clean macOS and Linux environments
+- [ ] Complete an independent learner pass and mark Module 03 verified
+- [ ] Publish and verify Module 04
 - [ ] Add runtime and provider decision guides
-- [ ] Create mode-comparison exercises
 - [ ] Add session and workspace troubleshooting
 - [ ] Establish automated link and Markdown checks
 

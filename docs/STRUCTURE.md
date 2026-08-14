@@ -29,9 +29,12 @@ The structure separates canonical English course content, runnable artifacts, li
 │   │   ├── 01-agent-model-harness/
 │   │   │   ├── README.md
 │   │   │   └── ARCHITECTURE-MAP.md
-│   │   └── 02-plugin-architecture/
+│   │   ├── 02-plugin-architecture/
+│   │   │   ├── README.md
+│   │   │   └── PLUGIN-MAP.md
+│   │   └── 03-runtime-modes/
 │   │       ├── README.md
-│   │       └── PLUGIN-MAP.md
+│   │       └── MODE-COMPARISON.md
 │   ├── zh-CN/
 │   │   └── README.md
 │   └── ja/
