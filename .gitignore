@@ -1,0 +1,26 @@
+# Operating systems and editors
+.DS_Store
+.idea/
+.vscode/
+
+# JavaScript and TypeScript
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.local
+*.log
+
+# Generated course evidence
+artifacts/
+tmp/

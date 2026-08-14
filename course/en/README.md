@@ -1,0 +1,44 @@
+# English Course
+
+This is the canonical edition of Learn DeepSeek Harness.
+
+## Progression
+
+### Track A — Operator Foundations
+
+| # | Module | Status |
+|---:|---|---|
+| 00 | Quick Start: From Zero to First Safe Task | Planned |
+| 01 | Agent = Model + Harness | Planned |
+| 02 | Understanding the Plugin Architecture | Planned |
+| 03 | Mastering the Four Runtime Modes | Planned |
+| 04 | Models, Providers, Workspaces, and Sessions | Planned |
+
+### Track B — Plugin Builder
+
+| # | Module | Status |
+|---:|---|---|
+| 05 | Safe Agentic Coding Workflows | Planned |
+| 06 | Plugins vs Tools vs Skills vs MCP | Planned |
+| 07 | Build Your First DSH Plugin | Planned |
+| 08 | Hooks, Context, and Session Engineering | Planned |
+
+### Track C — Production Practice
+
+| # | Module | Status |
+|---:|---|---|
+| 09 | Subagents, Workflows, and Automation | Planned |
+| 10 | Tracing, Evaluation, and Failure Recovery | Planned |
+| 11 | Package, Publish, and Maintain | Planned |
+
+### Capstone
+
+| # | Module | Status |
+|---:|---|---|
+| 12 | Release Readiness Agent | Planned |
+
+Read [SYLLABUS.md](../../SYLLABUS.md) for learning objectives, lesson plans, and required evidence.
+
+## Content rule
+
+A module directory will be created when real drafting begins. Empty modules are not generated in advance. Each technical lesson must use [the module template](../../templates/module-template.md) and follow [the verification policy](../../docs/VERSIONING.md).
