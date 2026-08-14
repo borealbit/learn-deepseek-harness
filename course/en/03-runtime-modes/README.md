@@ -468,4 +468,4 @@ One completed, sanitized [mode-comparison worksheet](MODE-COMPARISON.md) compari
 
 ## Next module
 
-[Module 04 — Models, Providers, Workspaces, and Sessions](../../../SYLLABUS.md#module-04--models-providers-workspaces-and-sessions) is planned. Until it is published, use the syllabus as the learning map.
+Continue to [Module 04 — Models, Providers, Workspaces, and Sessions](../04-models-providers-workspaces-sessions/README.md) to separate model routing, credentials, filesystem location, and durable conversation history.

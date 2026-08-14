@@ -6,7 +6,7 @@ Learn how to use and extend [DeepSeek Harness](https://github.com/deepseek-ai/de
 
 ## Project status
 
-**English-first development · Modules 00–03 in draft**
+**English-first development · Modules 00–04 in draft**
 
 The English course is the only active edition until English v1 is complete. Existing Simplified Chinese and Japanese placeholders are frozen; localization will resume after the English lessons and labs have been verified.
 
@@ -22,9 +22,11 @@ DeepSeek Harness is a developer preview and may introduce compatibility-breaking
 6. Learn how the runtime is composed in [Module 02 — Understanding the Plugin Architecture](course/en/02-plugin-architecture/README.md).
 7. Annotate the default Web composition with the [Module 02 plugin map](course/en/02-plugin-architecture/PLUGIN-MAP.md).
 8. Choose a runtime preset with [Module 03 — Mastering the Four Runtime Modes](course/en/03-runtime-modes/README.md).
-9. Run its controlled Standard-versus-Code comparison and complete the [mode-comparison worksheet](course/en/03-runtime-modes/MODE-COMPARISON.md), then continue through the [course syllabus](SYLLABUS.md).
+9. Run its controlled Standard-versus-Code comparison and complete the [mode-comparison worksheet](course/en/03-runtime-modes/MODE-COMPARISON.md).
+10. Separate model routes, credentials, directories, and history in [Module 04 — Models, Providers, Workspaces, and Sessions](course/en/04-models-providers-workspaces-sessions/README.md).
+11. Complete its [configuration and Session strategy](course/en/04-models-providers-workspaces-sessions/CONFIG-AND-SESSION-STRATEGY.md), then continue through the [course syllabus](SYLLABUS.md).
 
-Modules 00–03 are currently **source-reviewed drafts**. Module 00 still requires clean-platform installation and an authenticated end-to-end run; Module 01 is a documentation-only architecture exercise awaiting an independent learner pass; Module 02 still requires a clean-platform default-config dump and learner pass; Module 03 requires its two authenticated comparison runs and an independent learner pass. All four record `@deepseek-ai/dsh@0.1.0-rc.6` as the install package and pin source review to upstream commit [`47f943859bef60e4160492346772ded9b24f765a`](https://github.com/deepseek-ai/deepseek-harness/commit/47f943859bef60e4160492346772ded9b24f765a).
+Modules 00–04 are currently **source-reviewed drafts**. Module 00 still requires clean-platform installation and an authenticated end-to-end run; Module 01 is a documentation-only architecture exercise awaiting an independent learner pass; Module 02 still requires a clean-platform default-config dump and learner pass; Module 03 requires its two authenticated comparison runs and learner pass; Module 04 requires its provider, Workspace, fork, and restart lab plus learner pass. All five record `@deepseek-ai/dsh@0.1.0-rc.6` as the install package and pin source review to upstream commit [`47f943859bef60e4160492346772ded9b24f765a`](https://github.com/deepseek-ai/deepseek-harness/commit/47f943859bef60e4160492346772ded9b24f765a).
 
 ## What makes this course different
 
@@ -64,7 +66,7 @@ By the end of the course, you should be able to:
 | 01 | [Agent = Model + Harness](course/en/01-agent-model-harness/README.md) | Operator | Draft |
 | 02 | [Understanding the Plugin Architecture](course/en/02-plugin-architecture/README.md) | Operator | Draft |
 | 03 | [Mastering the Four Runtime Modes](course/en/03-runtime-modes/README.md) | Operator | Draft |
-| 04 | Models, Providers, Workspaces, and Sessions | Operator | Planned |
+| 04 | [Models, Providers, Workspaces, and Sessions](course/en/04-models-providers-workspaces-sessions/README.md) | Operator | Draft |
 | 05 | Safe Agentic Coding Workflows | Builder | Planned |
 | 06 | Plugins vs Tools vs Skills vs MCP | Builder | Planned |
 | 07 | Build Your First DSH Plugin | Builder | Planned |

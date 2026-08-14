@@ -32,9 +32,12 @@ The structure separates canonical English course content, runnable artifacts, li
 │   │   ├── 02-plugin-architecture/
 │   │   │   ├── README.md
 │   │   │   └── PLUGIN-MAP.md
-│   │   └── 03-runtime-modes/
+│   │   ├── 03-runtime-modes/
+│   │   │   ├── README.md
+│   │   │   └── MODE-COMPARISON.md
+│   │   └── 04-models-providers-workspaces-sessions/
 │   │       ├── README.md
-│   │       └── MODE-COMPARISON.md
+│   │       └── CONFIG-AND-SESSION-STRATEGY.md
 │   ├── zh-CN/
 │   │   └── README.md
 │   └── ja/

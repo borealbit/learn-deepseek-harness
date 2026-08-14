@@ -41,14 +41,18 @@ This roadmap is milestone-based. DeepSeek Harness is a fast-moving developer pre
 - [x] Research the four official agent presets, tool presentation, and their trust boundaries
 - [x] Draft Module 03 in English
 - [x] Add the controlled Standard-versus-Code mode-comparison exercise
+- [x] Research official model routes, credentials, Workspaces, Sessions, forks, and resume behavior
+- [x] Draft Module 04 in English
+- [x] Add the sanitized configuration and Session-strategy exercise
 - [ ] Complete an independent learner pass and mark Module 01 verified
 - [ ] Run Module 02's default Web config dump on clean macOS and Linux environments
 - [ ] Complete an independent learner pass and mark Module 02 verified
 - [ ] Run Module 03's comparison on clean macOS and Linux environments
 - [ ] Complete an independent learner pass and mark Module 03 verified
-- [ ] Publish and verify Module 04
-- [ ] Add runtime and provider decision guides
-- [ ] Add session and workspace troubleshooting
+- [ ] Run Module 04's provider, Workspace, fork, and restart lab on clean macOS and Linux environments
+- [ ] Complete an independent learner pass and mark Module 04 verified
+- [x] Add runtime and provider decision guides
+- [x] Add session and workspace troubleshooting
 - [ ] Establish automated link and Markdown checks
 
 ## Milestone 3 — English plugin builder track
