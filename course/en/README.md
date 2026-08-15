@@ -37,7 +37,7 @@ This is the canonical and currently active edition of Learn DeepSeek Harness.
 |---:|---|---|
 | 12 | [Release Readiness Agent](12-capstone-release-readiness-agent/README.md) | Draft |
 
-Read [SYLLABUS.md](../../SYLLABUS.md) for learning objectives, lesson plans, and required evidence.
+Read [SYLLABUS.md](../../SYLLABUS.md) for learning objectives, lesson plans, and required evidence. Use the [learner guide](../../docs/LEARNER-GUIDE.md) for role-based paths and the [verification matrix](../../docs/VERIFICATION-MATRIX.md) for the exact evidence and gaps behind every Draft status.
 
 ## Content rule
 

@@ -1,8 +1,18 @@
 {
   "name": "dsh-quick-start-workspace",
   "version": "0.0.0",
+  "description": "Synthetic read-only fixture for Learn DeepSeek Harness Module 00",
   "private": true,
+  "author": "Dom Liu",
   "type": "module",
+  "packageManager": "npm@11.9.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borealbit/learn-deepseek-harness.git",
+    "directory": "projects/quick-start-workspace"
+  },
   "license": "Apache-2.0",
-  "description": "Synthetic read-only fixture for Learn DeepSeek Harness Module 00"
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  }
 }

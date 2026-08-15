@@ -8,7 +8,9 @@
 
 This course teaches a repeatable engineering workflow for using, extending, evaluating, and maintaining DeepSeek Harness. It is organized around working artifacts rather than feature tours.
 
-The planned core runs for approximately **7–9 hours**, excluding optional reading, translation editions, and the capstone extension challenges.
+The complete core runs for approximately **18–24 hours**, including the maintained exercises and evidence review but excluding localization and optional capstone extensions. Shorter role-based paths are listed in the [learner guide](docs/LEARNER-GUIDE.md).
+
+This syllabus is the curriculum map. A module's own README is canonical for its exact lesson sequence, commands, evidence, and open verification gaps; headings may split or combine the conceptual lesson list below as implementation detail evolves.
 
 ## Prerequisites
 
@@ -125,7 +127,7 @@ A reproducible comparison of one bounded task across two modes.
 
 ### Deliverable
 
-A sanitized provider configuration and a documented workspace/session strategy.
+A validated, sanitized provider-boundary plan and a documented workspace/session strategy.
 
 ---
 
@@ -273,9 +275,9 @@ A release-ready plugin repository checklist and draft release notes.
 
 **Goal:** integrate the complete course into one practical, auditable agent.
 
-### Required behavior
+### Lessons
 
-The agent should:
+The capstone integrates these required behaviors:
 
 1. Inspect a repository without modifying it.
 2. Discover the project's own instructions and checks.
@@ -301,3 +303,5 @@ The agent should:
 ## Completion standard
 
 A learner completes the course when the capstone is runnable from a clean environment, its permissions are documented, its core behavior is covered by repeatable checks, and another developer can inspect the evidence without relying on the author's explanation.
+
+Repository CI and project tests are necessary but not sufficient. Consult the [verification matrix](docs/VERIFICATION-MATRIX.md) for authenticated, browser, platform, security, publication, and independent-learner gates that remain open.

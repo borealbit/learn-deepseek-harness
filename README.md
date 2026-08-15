@@ -1,5 +1,7 @@
 # Learn DeepSeek Harness
 
+[![Course quality](https://github.com/borealbit/learn-deepseek-harness/actions/workflows/verify.yml/badge.svg)](https://github.com/borealbit/learn-deepseek-harness/actions/workflows/verify.yml)
+
 > An independent, project-based learning resource created by **Dom Liu** and published by [Borealbit](https://github.com/borealbit). This project is not affiliated with, endorsed by, or maintained by DeepSeek.
 
 Learn how to use and extend [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)—from the first safe run to production-minded plugins, workflows, and agent systems.
@@ -8,41 +10,29 @@ Learn how to use and extend [DeepSeek Harness](https://github.com/deepseek-ai/de
 
 **English-first development · Modules 00–12 in draft**
 
-The English course is the only active edition until English v1 is complete. Existing Simplified Chinese and Japanese placeholders are frozen; localization will resume after the English lessons and labs have been verified.
+The English course is the only active edition until English v1 is complete. Existing Simplified Chinese and Japanese placeholders are frozen; localization will resume after the English lessons and labs have been verified. See the [learner guide](docs/LEARNER-GUIDE.md) and [verification matrix](docs/VERIFICATION-MATRIX.md).
 
 DeepSeek Harness is a developer preview and may introduce compatibility-breaking changes. This repository therefore treats the course as a versioned, continuously verified learning project rather than a static recording.
 
 ## Start here
 
-1. Open [Module 00 — Quick Start](course/en/00-quick-start/README.md).
-2. Use the included [practice workspace](projects/quick-start-workspace/).
-3. Record the result in the [first-run checklist](course/en/00-quick-start/CHECKLIST.md).
-4. Build the runtime mental model in [Module 01 — Agent = Model + Harness](course/en/01-agent-model-harness/README.md).
-5. Complete its [one-page architecture map](course/en/01-agent-model-harness/ARCHITECTURE-MAP.md).
-6. Learn how the runtime is composed in [Module 02 — Understanding the Plugin Architecture](course/en/02-plugin-architecture/README.md).
-7. Annotate the default Web composition with the [Module 02 plugin map](course/en/02-plugin-architecture/PLUGIN-MAP.md).
-8. Choose a runtime preset with [Module 03 — Mastering the Four Runtime Modes](course/en/03-runtime-modes/README.md).
-9. Run its controlled Standard-versus-Code comparison and complete the [mode-comparison worksheet](course/en/03-runtime-modes/MODE-COMPARISON.md).
-10. Separate model routes, credentials, directories, and history in [Module 04 — Models, Providers, Workspaces, and Sessions](course/en/04-models-providers-workspaces-sessions/README.md).
-11. Complete its [configuration and Session strategy](course/en/04-models-providers-workspaces-sessions/CONFIG-AND-SESSION-STRATEGY.md).
-12. Apply the least-privilege change loop in [Module 05 — Safe Agentic Coding Workflows](course/en/05-safe-agentic-coding-workflows/README.md).
-13. Audit the run with its [safe-change checklist](course/en/05-safe-agentic-coding-workflows/SAFE-CHANGE-CHECKLIST.md).
-14. Choose the correct extension stack in [Module 06 — Plugins vs Tools vs Skills vs MCP](course/en/06-plugins-tools-skills-mcp/README.md).
-15. Complete and validate its [extension decision matrix](course/en/06-plugins-tools-skills-mcp/EXTENSION-DECISION-MATRIX.md).
-16. Build and test a native Tool in [Module 07 — Build Your First DSH Plugin](course/en/07-build-first-dsh-plugin/README.md).
-17. Audit its [plugin build record](course/en/07-build-first-dsh-plugin/PLUGIN-BUILD-RECORD.md) and inspect the maintained [Repository Inspector](plugins/repository-inspector/).
-18. Enforce and audit Tool policy in [Module 08 — Hooks, Context, and Session Engineering](course/en/08-hooks-context-session-engineering/README.md).
-19. Review its [policy audit record](course/en/08-hooks-context-session-engineering/POLICY-AUDIT-RECORD.md) and maintained [Tool Policy Gate](plugins/tool-policy-gate/).
-20. Orchestrate bounded delegation in [Module 09 — Subagents, Workflows, and Automation](course/en/09-subagents-workflows-automation/README.md).
-21. Run the maintained [Delegated Review Workflow](projects/delegated-review-workflow/) and audit its [workflow run record](course/en/09-subagents-workflows-automation/WORKFLOW-RUN-RECORD.md).
-22. Replace one-off impressions with trace evidence in [Module 10 — Tracing, Evaluation, and Failure Recovery](course/en/10-tracing-evaluation-failure-recovery/README.md).
-23. Run the maintained [Mode Comparison Lab](projects/mode-comparison-lab/) and audit its [evaluation report](course/en/10-tracing-evaluation-failure-recovery/EVALUATION-REPORT.md).
-24. Turn a tested plugin into an auditable release candidate in [Module 11 — Package, Publish, and Maintain](course/en/11-package-publish-maintain/README.md).
-25. Run the Repository Inspector's strict release gate, then review the [release checklist](course/en/11-package-publish-maintain/RELEASE-READINESS-CHECKLIST.md), [draft notes](course/en/11-package-publish-maintain/RELEASE-NOTES-DRAFT.md), and [audit record](course/en/11-package-publish-maintain/RELEASE-AUDIT-RECORD.md).
-26. Integrate the course in [Module 12 — Capstone: Release Readiness Agent](course/en/12-capstone-release-readiness-agent/README.md).
-27. Run the maintained [Release Readiness Agent](projects/release-readiness-agent/), audit its [capstone evidence](course/en/12-capstone-release-readiness-agent/CAPSTONE-EVIDENCE.md), and complete the [final retrospective](course/en/12-capstone-release-readiness-agent/FINAL-RETROSPECTIVE.md) before reviewing the [course syllabus](SYLLABUS.md).
+1. Read the [learner guide](docs/LEARNER-GUIDE.md) and choose a complete or role-based path.
+2. Check the [verification matrix](docs/VERIFICATION-MATRIX.md) so you know which evidence exists and which gates remain open.
+3. Begin [Module 00 — Quick Start](course/en/00-quick-start/README.md) in its synthetic [practice workspace](projects/quick-start-workspace/).
+4. Run the repository's dependency-free content gate with `npm run content:check`.
+5. Follow each module's exact package version, immutable source reference, permission boundary, companion artifact, and cleanup steps.
 
-Modules 00–12 are currently **drafts with explicit evidence gaps**. Module 00 still requires clean-platform installation and an authenticated end-to-end run; Module 01 is a documentation-only architecture exercise awaiting an independent learner pass; Module 02 still requires a clean-platform default-config dump and learner pass; Module 03 requires its two authenticated comparison runs and learner pass; Module 04 requires its provider, Workspace, fork, and restart lab plus learner pass; Module 05 requires its authenticated plan, permission, mutation, audit, and recovery run plus learner pass; Module 06 requires a clean-platform decision-lab run and learner pass; Module 07 has passed local type, unit, real Tool Runtime, lifecycle, pack-dry-run, exact CLI/profile, Loader/Web HTTP boot, shutdown, and removal checks, but still requires browser Tool inspection, an authenticated model call, live reload, cross-platform, and learner verification; Module 08 has passed strict type, six keyless Tool policy and Session tests, pack-dry-run, exact CLI overlay/config, Loader/Web HTTP boot, and unload checks, but still requires authenticated model, persistent resume, browser, bundle-install, cross-platform, and learner verification; Module 09 has passed syntax checks, seven keyless tests through the real subagent service and worker-thread workflow engine, deterministic success/failure/cancellation scenarios, and offline lock replay, but still requires authenticated and remote providers, continuable and schedule persistence, browser, durable-job, cross-platform, and learner verification; Module 10 has passed syntax checks, ten keyless evaluation and corruption tests, real rc.6 Session validation over ten deterministic logs, paired success/failure/cancellation/partial-recovery scenarios, trace materialization, and offline lock replay, but still requires authenticated providers, live retry and timeout behavior, persistence crash repair, telemetry/browser export, cross-platform, and learner verification; Module 11 has passed strict type, thirteen keyless runtime and release-contract tests, prospective and repeated actual pack checks, exact rc.6 tarball/profile/config and Loader/Web HTTP boot, shutdown, and removal checks, but remains an intentional NO-GO pending public repository/security routes, npm identity and protected same-artifact publication, provenance, registry install, authenticated/browser, cross-platform, upgrade, and learner verification; Module 12 has passed syntax checks, thirteen keyless safety and lifecycle tests, real rc.6 Session validation, real one-child workflow/subagent composition, gated evidence materialization, and deterministic success/blocked scenarios, but still requires an OS sandbox, authenticated provider and human approval, production repository and persistence/telemetry review, publication/provenance gates, cross-platform runs, security review, and an independent learner pass. All thirteen record `@deepseek-ai/dsh@0.1.0-rc.6` as the install package and pin source review to upstream commit [`47f943859bef60e4160492346772ded9b24f765a`](https://github.com/deepseek-ai/deepseek-harness/commit/47f943859bef60e4160492346772ded9b24f765a).
+For a focused Module 04 exercise, use the keyless [Provider Configuration Lab](projects/provider-configuration-lab/) before entering a real credential or opening a provider route. The complete 00–12 sequence and all deliverables remain available in the [curriculum table](#curriculum) and [syllabus](SYLLABUS.md).
+
+## Readiness at a glance
+
+- All 13 English modules are written and source-reviewed drafts.
+- Course-owned labs and plugins have maintained keyless checks where applicable, now enforced by the [Course quality workflow](.github/workflows/verify.yml).
+- No module is currently marked verified.
+- Authenticated model runs, browser behavior, clean macOS/Windows reproduction, security and publication gates, and independent learner passes remain open where applicable.
+- Every module pins `@deepseek-ai/dsh@0.1.0-rc.6` and upstream source commit [`47f943859bef60e4160492346772ded9b24f765a`](https://github.com/deepseek-ai/deepseek-harness/commit/47f943859bef60e4160492346772ded9b24f765a).
+
+The [verification matrix](docs/VERIFICATION-MATRIX.md) is the canonical compact status record. A passing repository check is evidence for its named scope only; it is not an authenticated, cross-platform, or production verification claim.
 
 ## What makes this course different
 
@@ -103,17 +93,17 @@ Read the complete learning objectives, lesson breakdown, and deliverables in [SY
 | `plugins/` | Course-built DSH plugins |
 | `resources/` | Curated official references and decision guides |
 | `templates/` | Reusable lesson and project templates |
-| `docs/` | Repository architecture, version policy, and editorial decisions |
+| `docs/` | Learner navigation, verification status, repository architecture, version policy, and editorial decisions |
 
 See [docs/STRUCTURE.md](docs/STRUCTURE.md) for the full information architecture.
 
 ## Upstream references
 
 - [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)
-- [Official Web UI guide](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/user/guide/index.md)
-- [Official model configuration guide](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/user/guide/providers.md)
-- [DeepSeek Harness architecture](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/architecture.md)
-- [Extension cookbook](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/cookbook/extension-cookbook.md)
+- [Official Web UI guide at the reviewed revision](https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/user/guide/index.md)
+- [Official model configuration guide at the reviewed revision](https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/user/guide/providers.md)
+- [DeepSeek Harness architecture at the reviewed revision](https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/architecture.md)
+- [Extension cookbook at the reviewed revision](https://github.com/deepseek-ai/deepseek-harness/blob/47f943859bef60e4160492346772ded9b24f765a/docs/cookbook/extension-cookbook.md)
 - [Cordis](https://github.com/cordiverse/cordis)
 
 ## License and attribution

@@ -17,6 +17,10 @@ This roadmap is milestone-based. DeepSeek Harness is a fast-moving developer pre
 - [x] Define repository and future localization structure
 - [x] Define version and verification policy
 - [x] Add contribution and agent-authoring guidance
+- [x] Add a learner guide and machine-checked verification matrix
+- [x] Add repository-wide content, attribution, link, and generated-file checks
+- [x] Add credential-free GitHub Actions coverage for maintained labs and plugins
+- [x] Add security, support, changelog, issue, and pull-request infrastructure
 
 ## Milestone 1 — English quick start
 
@@ -44,6 +48,7 @@ This roadmap is milestone-based. DeepSeek Harness is a fast-moving developer pre
 - [x] Research official model routes, credentials, Workspaces, Sessions, forks, and resume behavior
 - [x] Draft Module 04 in English
 - [x] Add the sanitized configuration and Session-strategy exercise
+- [x] Add the dependency-free Provider Configuration Lab with three sanitized strategies and six negative-boundary tests
 - [ ] Complete an independent learner pass and mark Module 01 verified
 - [ ] Run Module 02's default Web config dump on clean macOS and Linux environments
 - [ ] Complete an independent learner pass and mark Module 02 verified
@@ -53,7 +58,7 @@ This roadmap is milestone-based. DeepSeek Harness is a fast-moving developer pre
 - [ ] Complete an independent learner pass and mark Module 04 verified
 - [x] Add runtime and provider decision guides
 - [x] Add session and workspace troubleshooting
-- [ ] Establish automated link and Markdown checks
+- [x] Establish automated link, Markdown, metadata, attribution, and generated-file checks
 
 ## Milestone 3 — English plugin builder track
 
@@ -120,7 +125,7 @@ This roadmap is milestone-based. DeepSeek Harness is a fast-moving developer pre
 - [ ] Reopen Japanese localization with native-language review
 - [ ] Reach full Simplified Chinese parity
 - [ ] Reach native-reviewed Japanese parity
-- [ ] Add contribution issue templates
+- [x] Add contribution and lesson-verification issue templates
 - [ ] Publish selected community plugin reviews
 - [ ] Create a transparent compatibility dashboard
 

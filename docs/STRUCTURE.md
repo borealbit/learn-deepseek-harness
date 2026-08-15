@@ -13,8 +13,20 @@ The structure separates canonical English course content, runnable artifacts, li
 ├── README.ja.md
 ├── SYLLABUS.md
 ├── ROADMAP.md
+├── CHANGELOG.md
 ├── CONTRIBUTING.md
 ├── AGENTS.md
+├── SECURITY.md
+├── SUPPORT.md
+├── package.json
+├── scripts/
+│   └── validate-course.mjs
+├── .github/
+│   ├── CODEOWNERS
+│   ├── workflows/
+│   │   └── verify.yml
+│   ├── ISSUE_TEMPLATE/
+│   └── pull_request_template.md
 ├── LICENSE
 ├── LICENSE-CODE
 ├── LICENSES.md
@@ -71,11 +83,14 @@ The structure separates canonical English course content, runnable artifacts, li
 │       └── README.md
 ├── docs/
 │   ├── STRUCTURE.md
-│   └── VERSIONING.md
+│   ├── VERSIONING.md
+│   ├── LEARNER-GUIDE.md
+│   └── VERIFICATION-MATRIX.md
 ├── projects/
 │   ├── README.md
 │   ├── quick-start-workspace/
 │   │   ├── README.md
+│   │   ├── NOTICE
 │   │   ├── package.json
 │   │   ├── notes/
 │   │   │   └── project-goals.md
@@ -85,6 +100,7 @@ The structure separates canonical English course content, runnable artifacts, li
 │   │   ├── AGENTS.md
 │   │   ├── CHANGE-REQUEST.md
 │   │   ├── README.md
+│   │   ├── NOTICE
 │   │   ├── package.json
 │   │   ├── src/
 │   │   │   └── slugify.js
@@ -93,11 +109,20 @@ The structure separates canonical English course content, runnable artifacts, li
 │   ├── extension-selection-lab/
 │   │   ├── README.md
 │   │   ├── SCENARIOS.md
+│   │   ├── NOTICE
 │   │   ├── package.json
 │   │   ├── src/
 │   │   │   └── validate-matrix.js
 │   │   └── test/
 │   │       └── validate-matrix.test.js
+│   ├── provider-configuration-lab/
+│   │   ├── README.md
+│   │   ├── NOTICE
+│   │   ├── package.json
+│   │   ├── fixtures/
+│   │   ├── scripts/
+│   │   ├── src/
+│   │   └── test/
 │   ├── delegated-review-workflow/
 │   │   ├── README.md
 │   │   ├── NOTICE

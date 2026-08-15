@@ -57,6 +57,23 @@ Before marking a lesson verified:
 
 Source review, package metadata inspection, and a partially completed install are useful evidence, but they do not equal end-to-end verification.
 
+## Repository quality gate
+
+The dependency-free root command checks structure, lesson metadata, relative
+links, English-only canonical content, immutable technical source links,
+license and attribution fields, exact dependency declarations, companion
+artifacts, and accidentally committed generated or credential-shaped files:
+
+```bash
+npm run content:check
+```
+
+GitHub Actions additionally runs every maintained lab and plugin test suite and
+reproduces the capstone's golden evidence. These checks are required for a
+course change, but they do not replace authenticated, browser, platform,
+security, publication, or independent-learner gates. The current separation is
+recorded in the [verification matrix](VERIFICATION-MATRIX.md).
+
 ## Handling upstream changes
 
 When DeepSeek Harness changes:

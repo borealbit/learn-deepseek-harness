@@ -21,9 +21,10 @@ After this module, you can:
 - predict which facts change on the next request and which stay bound to an existing session;
 - choose between a new session, resume, fork, event-log replay, archive, and export;
 - isolate projects and credentials with a deliberate workspace and Harness-home strategy; and
+- validate a secret-free provider-boundary plan before opening a real route; and
 - produce a sanitized provider configuration and session-boundary record.
 
-Estimated time: **70–95 minutes**, excluding provider signup or an optional second-model comparison.
+Estimated time: **90–120 minutes**, excluding provider signup or an optional second-model comparison.
 
 ## Verification status
 
@@ -32,6 +33,7 @@ This lesson is a **source-reviewed draft**, not a verified release.
 - Provider configuration, model discovery and selection, credential resolution, workspace identity, Session logging, resume, fork, and export behavior were reviewed at upstream commit [`47f943859bef60e4160492346772ded9b24f765a`](https://github.com/deepseek-ai/deepseek-harness/commit/47f943859bef60e4160492346772ded9b24f765a).
 - npm registry metadata was checked on 2026-08-13. Both `latest` and `next` resolved to [`@deepseek-ai/dsh@0.1.0-rc.6`](https://www.npmjs.com/package/@deepseek-ai/dsh/v/0.1.0-rc.6).
 - The reviewed source still declared the CLI as `0.1.0-rc.5`, so the install package and immutable source reference remain separate evidence.
+- The maintained dependency-free [Provider Configuration Lab](../../../projects/provider-configuration-lab/) passes six keyless tests covering hosted, compatible, and loopback-only plans plus secret, transport, allowlist, workspace, and schema failures. It does not read credentials or call a network.
 - The lab requires a clean Web launch, a trusted provider credential, three model runs, one fork, and one restart. Those steps have not yet completed on the required macOS and Linux verification environments.
 - The commands that prepare the synthetic workspaces, lesson metadata, links, Markdown, diagrams, and pinned source paths are checked locally. An independent learner pass remains pending.
 
@@ -267,6 +269,25 @@ flowchart TD
 
 After this decision, separately choose the provider/model and permission preset. If the provider changes, explicitly decide whether it may receive the retained Session history. If the filesystem boundary changes, create a new Session under the intended Workspace rather than relying on conversation instructions to simulate isolation.
 
+## Pre-lab — Validate the boundary plan without a key
+
+Before opening a real provider route, run the maintained
+[Provider Configuration Lab](../../../projects/provider-configuration-lab/):
+
+```sh
+cd projects/provider-configuration-lab
+npm run check
+npm test
+npm run demo
+cd ../..
+```
+
+The lab validates three synthetic plans and emits a deterministic digest for
+each sanitized decision record. It deliberately does not use the DSH settings
+schema, resolve an environment variable, make a provider request, or prove
+model compatibility. Record the strategy name and digest in your worksheet,
+then independently verify the real UI and runtime behavior below.
+
 ## Lab — Prove route, Workspace, fork, and resume boundaries
 
 The deliverable is a completed copy of [CONFIG-AND-SESSION-STRATEGY.md](CONFIG-AND-SESSION-STRATEGY.md). The lab uses two synthetic Workspaces and one isolated Harness home.
@@ -452,6 +473,7 @@ Retain only the sanitized worksheet. Do not retain or share the raw Session expo
 ## Completion check
 
 - [ ] I can distinguish provider route, model, model selection, Workspace, and Session identities.
+- [ ] The keyless provider plan passed and I recorded its sanitized digest.
 - [ ] I recorded a credential reference and source without exposing its value.
 - [ ] I know why a provider id cannot be casually renamed.
 - [ ] I treated modality metadata as a declaration rather than an endpoint test.
@@ -465,7 +487,7 @@ Retain only the sanitized worksheet. Do not retain or share the raw Session expo
 
 ## Deliverable
 
-One completed, sanitized [configuration and Session strategy](CONFIG-AND-SESSION-STRATEGY.md) containing provider/model facts, credential handling, Workspace boundaries, Session-operation decisions, lab evidence, integrity checks, and explicit unverified assumptions.
+One completed, sanitized [configuration and Session strategy](CONFIG-AND-SESSION-STRATEGY.md) containing the keyless provider-plan digest, provider/model facts, credential handling, Workspace boundaries, Session-operation decisions, authenticated lab evidence, integrity checks, and explicit unverified assumptions.
 
 ## Official sources
 

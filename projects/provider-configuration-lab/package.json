@@ -1,0 +1,23 @@
+{
+  "name": "@borealbit/provider-configuration-lab",
+  "version": "0.1.0",
+  "description": "Keyless provider-boundary planning lab for Learn DeepSeek Harness Module 04",
+  "private": true,
+  "author": "Dom Liu",
+  "type": "module",
+  "packageManager": "npm@11.9.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borealbit/learn-deepseek-harness.git",
+    "directory": "projects/provider-configuration-lab"
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "scripts": {
+    "check": "node --check src/validate-provider-plan.mjs && node --check scripts/run-demo.mjs && node --check test/provider-plan.test.mjs",
+    "demo": "node scripts/run-demo.mjs",
+    "test": "node --test test/provider-plan.test.mjs"
+  }
+}

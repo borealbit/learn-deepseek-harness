@@ -3,7 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "description": "Deterministic Session-trace evaluation lab for Learn DeepSeek Harness Module 10",
+  "author": "Dom Liu",
   "type": "module",
+  "packageManager": "npm@11.9.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borealbit/learn-deepseek-harness.git",
+    "directory": "projects/mode-comparison-lab"
+  },
   "engines": {
     "node": "^22.19.0 || >=24.0.0"
   },

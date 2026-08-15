@@ -16,6 +16,26 @@ Record only sanitized facts. Replace every placeholder marker before retaining o
 | Node.js version | TODO: |
 | Author | TODO: name or pseudonym |
 
+## Keyless provider-boundary plan
+
+Complete the [Provider Configuration Lab](../../../projects/provider-configuration-lab/)
+before recording an authenticated route. The plan is course-owned architecture
+evidence, not a DSH settings document.
+
+| Field | Sanitized value |
+|---|---|
+| Strategy name | TODO: `hosted-deepseek`, `compatible-gateway`, `local-loopback`, or reviewed synthetic variant |
+| Provider kind | TODO: `catalog`, `openai-compatible`, or `local` |
+| Credential mode | TODO: environment reference name or `none`; never a value |
+| Network boundary | TODO: public hostname allowlist or loopback-only |
+| Workspace label | TODO: synthetic relative label only |
+| Plan digest | TODO: `sha256:<64 lowercase hexadecimal characters>` |
+| `npm test` result | TODO: exit status and test count |
+
+Differences between the keyless plan and the authenticated route: TODO: list
+each difference or state that only secret values and runtime-assigned ids were
+added.
+
 ## Sanitized provider and model record
 
 | Fact | Recorded value |
@@ -197,6 +217,7 @@ Interrupted-side-effect rule: TODO: verify external state before retrying a non-
 
 ## Sanitization and completion
 
+- [ ] The keyless provider plan passed all tests and its digest is recorded.
 - [ ] No placeholder marker remains.
 - [ ] No API key, token, credential value, private endpoint path, or secret-bearing header is present.
 - [ ] No absolute local path, raw Session id, raw export, private file content, or proprietary prompt is present.

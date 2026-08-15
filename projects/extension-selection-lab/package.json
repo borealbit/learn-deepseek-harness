@@ -1,9 +1,20 @@
 {
   "name": "dsh-extension-selection-lab",
   "version": "1.0.0",
+  "description": "Dependency-free extension decision fixture for Learn DeepSeek Harness Module 06",
   "private": true,
+  "author": "Dom Liu",
   "type": "module",
+  "packageManager": "npm@11.9.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borealbit/learn-deepseek-harness.git",
+    "directory": "projects/extension-selection-lab"
+  },
   "license": "Apache-2.0",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
   "scripts": {
     "test": "node --test"
   }

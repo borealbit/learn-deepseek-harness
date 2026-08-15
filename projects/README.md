@@ -11,7 +11,7 @@ Runnable artifacts live here. They turn course concepts into evidence that learn
 | [Extension Selection Lab](extension-selection-lab/) | 06 | Compare Tool, Skill, MCP, and native plugin architecture stacks | Draft |
 | [Delegated Review Workflow](delegated-review-workflow/) | 09 | Exercise bounded structured delegation, cancellation, and a parent-owned human checkpoint | Draft |
 | [Mode Comparison Lab](mode-comparison-lab/) | 03, 10 | Compare paired golden-task behavior, trace evidence, recovery, and cost under controlled inputs | Draft |
-| Provider Configuration Lab | 04 | Practice sanitized provider setup | Planned |
+| [Provider Configuration Lab](provider-configuration-lab/) | 04 | Validate a sanitized hosted, compatible, or loopback-only provider-boundary plan without reading credentials or calling a network | Draft |
 | [Release Readiness Agent](release-readiness-agent/) | 05–12 | Integrate bounded inspection, plan identity, checks, one-shot mutation approval, delegation, and Session evidence without granting release authority | Draft |
 
 ## Project requirements

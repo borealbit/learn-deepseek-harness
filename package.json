@@ -1,0 +1,16 @@
+{
+  "name": "@borealbit/learn-deepseek-harness",
+  "version": "0.1.0-dev",
+  "description": "Repository-wide quality gates for the Learn DeepSeek Harness course",
+  "private": true,
+  "author": "Dom Liu",
+  "license": "SEE LICENSES.md",
+  "type": "module",
+  "packageManager": "npm@11.9.0",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "scripts": {
+    "content:check": "node scripts/validate-course.mjs"
+  }
+}

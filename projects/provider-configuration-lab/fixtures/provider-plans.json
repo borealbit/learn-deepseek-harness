@@ -1,0 +1,102 @@
+[
+  {
+    "schemaVersion": 1,
+    "name": "hosted-deepseek",
+    "provider": {
+      "kind": "catalog",
+      "endpoint": "https://api.deepseek.com",
+      "credential": {
+        "mode": "environment-reference",
+        "reference": "DEEPSEEK_API_KEY"
+      }
+    },
+    "model": {
+      "id": "deepseek-chat",
+      "requiredCapabilities": [
+        "text",
+        "tools"
+      ]
+    },
+    "workspace": {
+      "rootLabel": "synthetic/provider-lab",
+      "allowSensitiveData": false
+    },
+    "session": {
+      "persistence": "local",
+      "resumePolicy": "same-workspace",
+      "forkPolicy": "same-provider"
+    },
+    "network": {
+      "allowedHosts": [
+        "api.deepseek.com"
+      ],
+      "loopbackOnly": false
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "name": "compatible-gateway",
+    "provider": {
+      "kind": "openai-compatible",
+      "endpoint": "https://gateway.example.test/v1",
+      "credential": {
+        "mode": "environment-reference",
+        "reference": "EXAMPLE_PROVIDER_API_KEY"
+      }
+    },
+    "model": {
+      "id": "example-model-v1",
+      "requiredCapabilities": [
+        "text",
+        "tools"
+      ]
+    },
+    "workspace": {
+      "rootLabel": "synthetic/provider-lab",
+      "allowSensitiveData": false
+    },
+    "session": {
+      "persistence": "ephemeral",
+      "resumePolicy": "new-session",
+      "forkPolicy": "explicit-provider"
+    },
+    "network": {
+      "allowedHosts": [
+        "gateway.example.test"
+      ],
+      "loopbackOnly": false
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "name": "local-loopback",
+    "provider": {
+      "kind": "local",
+      "endpoint": "http://127.0.0.1:11434/v1",
+      "credential": {
+        "mode": "none"
+      }
+    },
+    "model": {
+      "id": "local-example-model",
+      "requiredCapabilities": [
+        "text"
+      ]
+    },
+    "workspace": {
+      "rootLabel": "synthetic/provider-lab",
+      "allowSensitiveData": false
+    },
+    "session": {
+      "persistence": "ephemeral",
+      "resumePolicy": "new-session",
+      "forkPolicy": "same-provider"
+    },
+    "network": {
+      "allowedHosts": [
+        "127.0.0.1"
+      ],
+      "loopbackOnly": true
+    }
+  }
+]

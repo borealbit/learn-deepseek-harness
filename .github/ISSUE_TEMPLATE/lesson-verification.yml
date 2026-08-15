@@ -1,0 +1,66 @@
+name: Lesson verification report
+description: Record a clean reproduction, mismatch, or independent learner pass.
+title: "[Verification]: Module "
+body:
+  - type: input
+    id: module
+    attributes:
+      label: Module and lesson
+      placeholder: Module 04 — provider plan validation
+    validations:
+      required: true
+  - type: input
+    id: course_commit
+    attributes:
+      label: Course commit
+      placeholder: Full 40-character commit SHA
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Package and upstream source
+      placeholder: "@deepseek-ai/dsh@0.1.0-rc.6 / 47f943..."
+    validations:
+      required: true
+  - type: textarea
+    id: platform
+    attributes:
+      label: Clean environment
+      description: Include OS, version, architecture, Node, package manager, browser, and whether the environment was disposable.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps performed
+      description: List exact commands and UI actions. Do not include credentials.
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: Result
+      options:
+        - Passed exactly as written
+        - Passed with documented differences
+        - Failed
+        - Blocked by an unavailable dependency or service
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized evidence and differences
+      description: Include exit codes and bounded output, plus every difference from the lesson. Do not include private Session logs.
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope confirmation
+      options:
+        - label: I used synthetic data and removed all credential material.
+          required: true
+        - label: I understand that one passing report does not by itself mark the module verified.
+          required: true
